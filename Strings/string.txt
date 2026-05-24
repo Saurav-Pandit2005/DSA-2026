@@ -1,0 +1,101 @@
+** What are Strings?
+----------------------
+
+-> String stored a text value..
+
+    => Char Array Example :
+    ------------------------
+
+    char arr[] = {'z','w','a'};
+
+    => String Creation
+    ------------------------
+
+        -> Their are two methods..
+
+        1) String str1 = "saurav";
+
+        2) String str2 = new String("Saurav");
+
+    --> In java, Strings are IMMUTABLE (means string can't change ..., if u want to change string so take a new strings and stored new values.)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Input/Output
+------------------
+
+-> In java, first take a Scanner class..
+
+-> Then their are two option 
+
+    1) sc.next()     -----------------> Take only single word as a input.
+
+        Example : name = "Saurav Pandit" 
+        ---------------------------------
+
+        -> Take only Saurav as a input.
+
+    2) sc.nextLine() -----------------> Take overall Pharagraph as a input.
+
+        Example : name = "Saurav Pandit" 
+        ---------------------------------
+        
+        -> Take Whole String Saurav Pandit as a input.
+
+---------------------------------------------------------------------------------
+
+** String Length
+--------------------
+
+-> .Length() function to find String length.
+
+    Example :
+    -------------
+
+        String fullName = "Saurav Pandit";
+        System.out.println(fullName.length());
+
+-------------------------------------------------------------
+
+** Concatenation
+--------------------
+
+-> To add two or more string using concat method.
+
+    Example : 
+    ------------
+
+        String firstName = "Saurav";
+        String lastName = "Pandit";
+
+        String fullName = firstName + " " + lastName;
+
+        System.out.println(fullName);
+
+-------------------------------------------------------------
+
+** String charAt method
+-------------------------
+
+-> To find one to one char in Strings.
+
+    Example :
+    ----------
+
+        String firstName = "Saurav";
+        String lastName = "Pandit";
+
+        String fullName = firstName + " " + lastName;
+
+        System.out.println(fullName.charAt(0));
+
+        -----------------------------------------
+
+    Output : 
+    -----------
+
+        S    
+------------------------------------------------------------------
+
+** 
+
