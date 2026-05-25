@@ -97,5 +97,174 @@
         S    
 ------------------------------------------------------------------
 
-** 
+** Question : Check if a string is Palindrome
+------------------------------------------------
 
+In leetcode Question No : 125 Valid Palindrome
+
+-> In java, There is a one method to check given string is AlphaNumeric or not..
+
+    => Character.isLetterOrDigit()
+
+-> And if we want to convert Char to Lowercase char so that method called is ,
+
+    => Character.toLowerCase()
+
+------------------------------------------------------------------------------------
+
+-> Answer :
+
+    /*  Check if a String is Palindrome  */
+
+package Strings;
+
+public class Q1 {
+    public static boolean isPalindrome(String str){
+        for(int i=0; i<str.length()/2; i++){
+            if(str.charAt(i) != str.charAt(str.length()-1-i)){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        String str = "madam";
+        System.out.println(isPalindrome(str));
+    }
+}
+---------------------------------------------------------------------------
+
+** Question : Shortest Path
+-------------------------------
+
+-> Check Q2.java for Understand.
+-----------------------------------------
+
+** String function - Comapare
+-------------------------------
+
+-> In java if we are creating same string value with different string, so some times that value are equale or some time not equale.. 
+
+-> Because if we creating string using new keyword then we check that value are equale using .equals() function.
+
+    Example : 
+    -------------
+
+        String s1 = "Om";
+        String s2 = "Om";
+        String s3 = new String("Om");
+
+        if(s1 == s2){
+            System.out.println("Strings are Equale");
+        }else{
+            System.out.println("Strings are not Equale");
+        }
+
+        if(s1 == s3){
+            System.out.println("Strings are Equale");
+        }else{
+            System.out.println("Strings are not Equale");
+        }
+
+        if(s1.equals(s3)){
+            System.out.println("Strings are Equale");
+        }else{
+            System.out.println("Strings are not Equale");
+        }
+----------------------------------------------------------------------------------------------------------------------
+
+** String function - SubString
+--------------------------------
+
+-> SubString : Countinous Part of given String.
+
+    Example : 
+    -----------
+
+    "HelloWorld"    ------> lloW (SubString)
+
+    "HelloWorld"    ------> llor (Not SubString)
+
+-> In java, thier is one function called substring(0,5);
+
+    ==> Here 0 is a Starting Index.. and 5 is a Ending Index(but Excluded).
+
+
+    Example : 
+    --------------
+
+    String str = "HelloWorld";
+    System.out.println(str.substring(0,5));
+
+    Output : 
+    ---------
+
+    Hello
+------------------------------------------------------------------------------------
+
+** Print Largest String
+------------------------
+
+-> Check Q3.java
+
+-------------------------------------
+
+** Why String are Immutable?
+-------------------------------
+
+-> This Concept accept Intening Concept..
+
+    Example :
+
+        String s1 = "Om";
+        String s2 = "Om";
+        String s3 = new String("Om");
+
+        if(s1 == s2){
+            System.out.println("Strings are Equale");
+        }else{
+            System.out.println("Strings are not Equale");
+        }
+
+        if(s1 == s3){
+            System.out.println("Strings are Equale");
+        }else{
+            System.out.println("Strings are not Equale");
+        }
+
+        if(s1.equals(s3)){
+            System.out.println("Strings are Equale");
+        }else{
+            System.out.println("Strings are not Equale");
+        }
+--------------------------------------------------------------------
+
+** StringBuilder
+--------------------
+
+-> if we use StringBuilder then we perform operations on that string created by using StringBuilder.
+
+-> Normally we can't change string but using StringBuilder that is possible.
+
+Example : 
+-----------
+
+    StringBuilder sb = new StringBuilder("");
+        for(char ch ='a'; ch<='z'; ch++){
+            sb.append(ch);
+        }
+        System.out.println(sb);
+------------------------------------------------------------------------------------------------------------
+
+** Convert Letters to UpperCase
+-----------------------------------
+
+-> Check Q4.java
+--------------------
+
+** String Compression
+---------------------------
+
+-> Check Q5.java
+
+------------------------------------------------------------------------------------------------------------------
