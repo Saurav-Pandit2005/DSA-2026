@@ -168,7 +168,6 @@
         // some constant work
         // is done in this loop
     }
-
     ------------------------------
 
     Solution : TC = O(n*k)
@@ -183,4 +182,63 @@
     * Nested loop 1 Analysis
     --------------------------
 
-    
+    for(int i=0; i<n; i++) {
+        for(int j=i+1; j<n; j++) {
+            //some constant work
+            //is done in this loop
+        }
+    }
+    ------------------------------------
+
+    Solution : TC = O(n2/2 - n/2) * k
+
+    -> Ignore the Constant (TC= O(n2-n))
+    -> Take largest term as complexity (TC = O(n2))
+
+    So, Time Complexity = O(n2)
+
+    ---------------------------------------------------------
+
+    * Nested loop 2 Analysis
+    --------------------------
+
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<i; j++) {
+            //some constant work
+            //is done in this loop
+        }
+    }
+    --------------------------------
+
+    Solution : TC = O(kn2/2 - kn/2)
+
+    -> Ignore the Constant (TC= O(n2-n))
+    -> Take largest term as complexity (TC = O(n2))
+
+    So, Time Complexity = O(n2)
+
+    -------------------------------------------------------------
+
+    * Nested loop 3 Analysis
+    ---------------------------
+
+    //some k < n
+    for(int i=0; i<n; i+k) {
+        for(int j=i+1; j<=k; j++) {
+            //some constant work
+            //is done in this loop
+        }
+    }
+    --------------------------------
+
+    Solution : TC = O(n/k - k)
+
+    -> Ignore the Constant (TC= O(n))
+    -> Take largest term as complexity (TC = O(n))
+
+    So, Time Complexity = O(n)
+
+---------------------------------------------------------------------------
+
+** Searching / Sorting Examples
+-----------------------------------
