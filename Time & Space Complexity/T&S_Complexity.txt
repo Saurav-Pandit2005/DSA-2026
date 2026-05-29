@@ -1,0 +1,46 @@
+** Order Complexity Analysis
+-------------------------------------
+
+    Complexity : Ammount of Space or Time taken up by an algorithm/code as function of input size.
+                ----------------------------------------------------------------------------------
+                 NOT the actual time taken.
+
+    -> There is two part of this Complexity Order.
+
+    1) Time Complexity
+    2) Space Complexity
+
+-----------------------------------------------------------------
+
+** What is Time Complexity?
+---------------------------------
+
+    -> Ammount of Time taken up by an algorithm/code as function of input size.
+
+    Example : -> Linear Search
+    ---------------------------
+
+    -> for linear Search, there is Complexity (y) = ax+b; realated bcz linear Search created a line for that input size and time taken up by algorithm.
+
+    -> so, we take time as a n.  Complexity (y) = an+b;
+
+    -> but in Time Complexity we gernally ignore the constant term so the Time Complexity is :
+
+    -> Complexity (y) = O(n).
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Constant Time Complexity
+-----------------------------------
+
+    -> For Constant Time Complexity we gernally realated to the state line Concept for that.
+
+    -> Like if we perform algorithm in Constant Time so that algorithm created state line graph.
+
+    -> Means the state line graph Equation is : Y = Some Constant Value OR O(1) OR O(K)         -> K Represent Constant Value.
+
+    -> So The Constant Time Complexity is some Constant Value.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** 
