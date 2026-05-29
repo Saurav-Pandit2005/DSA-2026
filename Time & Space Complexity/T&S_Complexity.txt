@@ -43,4 +43,144 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-** 
+** Big O Notation
+---------------------
+
+    1. Big O describes growth rate → It tells how the runtime or memory of an algorithm increases as input size 𝑛 grows, focusing on the worst-case scenario.
+
+    2. It ignores constants → Big O only cares about the trend (e.g., 𝑂(𝑛), 𝑂(𝑛2)), not exact execution time. So whether an algorithm takes 2𝑛 or 5𝑛 steps, both are considered 𝑂(𝑛).
+
+    3. It helps compare efficiency → By expressing complexity (like 𝑂(1), 𝑂(𝑛), 𝑂(𝑛2)), you can quickly see which algorithm scales better for large inputs.
+
+    NOTE : We always try to find worst case complexity.
+
+    ** Steps to fing Time Complexity.
+    -----------------------------------
+
+    1) Ignore Constant.
+
+    2) Take largest term as complexity.
+
+    Example : 
+    -----------
+
+    1) Time => an2 + bn + c
+    ------------------------
+
+    Solution : 
+
+    -> Ignore the Constant.
+
+    Time Complexity = n2 + n + 1    (Ignore a,b and c)
+
+    -> Take largest term as complexity.
+
+    Time Complexity (TC) = O(n2)
+
+    => Bcz, we want worst case for dealing allthe cases that way we take largest term (n2).
+    ---------------------------------------------------------------------------------------
+
+    2) Time => an3 + blogn + c
+    ------------------------
+
+    Solution : 
+
+    -> Ignore the Constant.
+
+    Time Complexity = n3 + logn + 1    (Ignore a,b and c)
+
+    -> Take largest term as complexity.
+
+    Time Complexity (TC) = O(n3)
+
+    => Bcz, we want worst case for dealing allthe cases that way we take largest term (n3).
+
+-----------------------------------------------------------------------------------------------------
+
+** Big Omega & Theta Notation
+--------------------------------
+
+    * Big Ω (Omega) Notation
+    --------------------------
+
+    1. Best-case bound → It describes the minimum time an algorithm will take, even in the best scenario.
+
+    2. Lower bound → Formally, 𝑓(𝑛)=Ω(𝑔(𝑛)) means the algorithm takes at least proportional to 𝑔(𝑛) steps for large 𝑛.
+
+    3. Example: Linear search is Ω(1) because in the best case, the element is found immediately.
+
+    * Big Θ (Theta) Notation
+    --------------------------
+
+    1. Tight bound → It gives both the upper and lower bounds, meaning it describes the exact growth rate of an algorithm.
+
+    2. Balanced view → If 𝑓(𝑛)=Θ(𝑔(𝑛)), the algorithm’s runtime grows asymptotically equal to 𝑔(𝑛).
+
+    3. Example: Simple loop over 𝑛 elements is Θ(𝑛) because it always takes linear time, no more, no less.
+
+    -----------------------------------------------------------------------------------------------------------------------------
+
+    In short:
+    ----------
+
+    -> Big O → Worst-case (upper bound)
+
+    -> Big Ω → Best-case (lower bound)
+
+    -> Big Θ → Exact bound (tight growth rate)
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+** Common Complexities
+--------------------------
+
+    -> o(2n), O(n2), O(n), O(logn), O(1).
+
+-------------------------------------------------
+
+** Space Complexity
+---------------------
+
+    -> Input Space + auxiliary Space
+
+    1. Definition: Space complexity is the amount of memory an algorithm needs to run, as a function of the input size 𝑛.
+
+    2. Components: It includes memory for variables, data structures, recursion stack, and any extra storage the algorithm uses.
+
+    3. Purpose: Just like time complexity measures speed, space complexity measures memory efficiency — helping you choose algorithms that don’t consume excessive RAM.
+
+    Example : 
+    ----------
+
+    -> A simple loop over an array has O(1) space complexity (just a few variables).
+
+    -> A recursive algorithm like merge sort has O(n) space complexity because it needs extra memory for temporary arrays and recursion stack.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Loop Baesd Examples
+--------------------------
+
+    * Simple Loop Analysis
+    -------------------------
+
+    for(int i=0; i<n; i++) {
+        // some constant work
+        // is done in this loop
+    }
+
+    ------------------------------
+
+    Solution : TC = O(n*k)
+
+    -> Ignore the constant (TC = O(n))
+    -> Take largest term as complexity (TC = O(n))
+
+    So, Time Complexity = O(n)
+
+    --------------------------------------------------
+
+    * Nested loop 1 Analysis
+    --------------------------
+
+    
