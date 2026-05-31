@@ -38,4 +38,4 @@
 ** HashMap Operations
 -------------------------
 
--> 
+-> map.put 
