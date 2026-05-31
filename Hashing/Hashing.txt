@@ -1,0 +1,41 @@
+** Hashing Introduction
+---------------------------
+
+-> Hashing in Java is the process of converting data (keys) into a fixed-size integer value (hash code) using a hash function.
+
+-> which is then used to store and retrieve data efficiently in structures like HashMap, HashSet, and Hashtable. It enables fast access to data, typically in constant time O(1).
+
+-> Using Hashing We can generate two types of data structure.
+
+    1) Map
+    2) Set 
+
+    -> In Map there are three types.
+
+        1) HashMap
+        2) LinkedHashMap
+        3) TreeMap
+
+    -> In Set there are three types.
+
+        1) HashSet
+        2) LinkesdHashSet
+        3) TreeSet
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** HashMap
+----------------
+
+-> A HashMap in Java is a data structure that stores key-value pairs and allows very fast access to values using their keys.
+
+-> Key-Value Storage: Each entry has a unique key and a value.
+
+-> No Duplicate Keys: Keys must be unique; if you insert a duplicate key, the old value is replaced.
+
+-> We can Visualize that data as a Table or Nodes.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+** HashMap Operations
+-------------------------
+
+-> 
