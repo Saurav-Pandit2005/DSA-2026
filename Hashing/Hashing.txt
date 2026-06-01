@@ -33,9 +33,115 @@
 -> No Duplicate Keys: Keys must be unique; if you insert a duplicate key, the old value is replaced.
 
 -> We can Visualize that data as a Table or Nodes.
+
+-> HashMap not contain any order they select random keys.
 -----------------------------------------------------------------------------------------------------------------------------------
 
 ** HashMap Operations
 -------------------------
 
--> map.put 
+-> A HashMap in Java supports several core operations that make it powerful for storing and retrieving key-value pairs efficiently.
+
+* How to Create a HashMap *
+-----------------------------
+
+HashMap<String, Integer> hm = new HashMap<>();
+
+* Main Operations *
+-----------------------
+
+    put(Key, Value)         ------> O(1)
+    get(Key)                ------> O(1)
+    containsKey(key)        ------> O(1)
+    remove(key)             ------> O(1)
+--------------------------------------------
+
+* Mostly Used Operations in HashMap *
+----------------------------------------------
+
+Operation	                          Method	                                             Description	                                        Time Complexity
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Insert (Put)	                   put(key, value)	                  Adds a key-value pair. If the key already exists, updates the value.	        O(1) average
+Retrieve (Get)	                   get(key)	                          Returns the value associated with the key.	                                O(1) average
+Remove	                           remove(key)	                      Deletes the key-value pair.	                                                O(1) average
+Check Key	                       containsKey(key)	                  Returns true if the key exists.	                                            O(1)
+Check Value	                       containsValue(value)	              Returns true if the value exists.	                                            O(n)
+Size	                           size()	                          Returns the number of key-value pairs.	                                    O(1)
+Empty Check	                       isEmpty()	                      Returns true if the map has no entries.                                       O(1)
+Iterate Keys	                   keySet()	                          Returns a set of all keys.	                                                O(n)
+Iterate Values	                   values()	                          Returns a collection of all values.	                                        O(n)
+Iterate Entries	                   entrySet()	                      Returns a set of all key-value pairs.	                                        O(n)
+Replace	                           replace(key, newValue)	          Updates the value for an existing key.	                                    O(1)
+
+Example:
+----------
+
+    import java.util.HashMap;
+    import java.util.Map;
+
+    public class HashMapOperations {
+        public static void main(String[] args) {
+            HashMap<String, Integer> map = new HashMap<>();
+
+            // Insert
+            map.put("Apple", 10);
+            map.put("Banana", 5);
+            map.put("Orange", 7);
+
+            // Retrieve
+            System.out.println("Apple count: " + map.get("Apple"));
+
+            // Check existence
+            System.out.println("Contains Banana? " + map.containsKey("Banana"));
+
+            // Remove
+            map.remove("Orange");
+
+            // Iterate
+            for(Map.Entry<String, Integer> entry : map.entrySet()) {
+                System.out.println(entry.getKey() + " -> " + entry.getValue());
+            }
+
+            // Size
+            System.out.println("Size: " + map.size());
+        }
+    }
+
+    Output 
+   ------------
+
+    Apple count: 10
+    Contains Banana? true
+    Apple -> 10
+    Banana -> 5
+    Size: 2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Iteration on HashMap
+---------------------------
+
+-> Set<String> keys = hm.KeySet();
+
+    Example :
+    -----------
+
+        HashMap<String, Integer> hm = new HashMap<>();
+
+        hm.put("India", 2000);
+        hm.put("China", 2500);
+        hm.put("Russia", 3000);
+        hm.put("US", 4000);
+
+        System.out.println(hm);
+
+        // Iteration on HashMap
+
+        Set<String> keys = hm.keySet();         // Creating Set for Iteration
+        System.out.println(keys);
+
+        for (String k : keys) {
+            System.out.println("key = " + k + "," + "value = " + hm.get(k));
+        }
+
+-----------------------------------------------------------------------------------------------
