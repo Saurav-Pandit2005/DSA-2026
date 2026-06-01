@@ -195,3 +195,86 @@ Example:
     -> Worst case: O(n) (linked list) or O(log n) (tree-based bucket).
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+** LinkedHashMap
+------------------
+
+-> A LinkedHashMap in Java is a special type of HashMap that maintains the insertion order of keys.
+
+    * Key Points
+    --------------
+
+        -> Extends HashMap → Same functionality but with ordering.
+
+        -> Order Preserved → Iteration happens in the order keys were inserted.
+
+        -> Performance → Similar to HashMap (O(1) average for put, get, remove).
+
+        -> Implementation → Internally uses a doubly-linked list along with the hash table to keep track of order.
+
+        -> Access Order Option → Can be configured to maintain order based on access (useful for caches like LRU).
+
+    * Example :
+    -----------
+
+     LinkedHashMap<String, Integer> lhm = new LinkedHashMap<>();
+
+        lhm.put("India", 2000);
+        lhm.put("Brazil", 1200);
+        lhm.put("Ukrain", 2200);
+
+        System.out.println(lhm);
+
+    * Output 
+    ----------
+
+        {India=2000, Brazil=1200, Ukrain=2200}
+
+-------------------------------------------------------------------------------------------------------------------
+
+** TreeMap
+-------------
+
+-> A TreeMap in Java is a Map implementation that stores key-value pairs in sorted order using a self-balancing Red-Black Tree. 
+
+->  Unlike HashMap, it guarantees that keys are always ordered (either natural order or by a custom comparator), with operations like put(), get(), and remove() running in O(log n) time.
+
+
+    * Key Features of TreeMap
+    --------------------------
+
+    -> Sorted Keys: Maintains keys in ascending order by default, or by a custom comparator.
+
+    -> Underlying Structure: Uses a Red-Black Tree, ensuring balanced performance.
+
+    -> Time Complexity:
+
+        put(), get(), remove() → O(log n)
+
+        Iteration → O(n) (in sorted order).
+
+    -> Null Handling:
+
+        Null keys not allowed.
+
+        Null values allowed.
+
+
+    * Example :
+    -------------
+
+    TreeMap<String, Integer> tm = new TreeMap<>();
+
+        tm.put("Aus", 3600);
+        tm.put("India", 2000);
+        tm.put("Brazil", 3500);
+        tm.put("Chine", 6000);
+
+        System.out.println(tm);
+
+    * Output 
+    ----------
+
+        {Aus=3600, Brazil=3500, Chine=6000, India=2000}         // Sorted Order
+        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
