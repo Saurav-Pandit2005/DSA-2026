@@ -121,7 +121,7 @@ Example:
 ** Iteration on HashMap
 ---------------------------
 
--> Set<String> keys = hm.KeySet();
+-> Set<String> keys = hm.KeySet();           // O(1)
 
     Example :
     -----------
@@ -145,3 +145,53 @@ Example:
         }
 
 -----------------------------------------------------------------------------------------------
+
+** HashMap Implemantation
+----------------------------
+
+
+
+
+** Special Notes
+---------------------
+
+    * Most Cases (Average Case) Time Complexity in HashMap
+    ------------------------------------------------------
+
+        -> put(), get(), remove() → O(1)
+
+    Why?
+    ------
+
+        -> Hash function distributes keys evenly across buckets.
+
+        -> Collisions are minimal, so lookup is direct.
+
+        -> Even if collisions occur, Java 8+ converts long chains into balanced trees → still efficient.
+        -------------------------------------------------------------------------------------------------
+
+    * Worst Case Time Complexity in HashMap
+    -----------------------------------------
+
+    -> put(), get(), remove() → O(n)
+
+    Why?
+    -------
+
+    -> If all keys hash to the same bucket (bad hash function or many collisions).
+
+    -> Then that bucket becomes a linked list of size n.
+
+    -> Lookup requires scanning the entire list.
+
+    -> Java 8+ improves this: if collisions exceed a threshold, bucket becomes a red-black tree, reducing worst case to O(log n) instead of O(n).
+    ------------------------------------------------------------------------------------------------------------------------------------------------
+
+    * Summary *
+    -------------
+
+    -> Average case: O(1) → fast, constant-time operations.
+
+    -> Worst case: O(n) (linked list) or O(log n) (tree-based bucket).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
