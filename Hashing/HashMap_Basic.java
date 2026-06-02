@@ -1,25 +1,25 @@
 package Hashing;
 import java.util.*;
 
-public class Hashing_Basic {
+public class HashMap_Basic {
     public static void main(String[] args) {
 
         // // Create a HashMap
-        // HashMap<String, Integer> hm = new HashMap<>();
+        HashMap<String, Integer> hm = new HashMap<>();
 
-        // // Insert Value - O(1)
-        // hm.put("India", 500);
-        // hm.put("China", 1500);
-        // hm.put("Japan", 1200);
-        // hm.put("US", 3000);
+        // Insert Value - O(1)
+        hm.put("India", 500);
+        hm.put("China", 1500);
+        hm.put("Japan", 1200);
+        hm.put("US", 3000);
 
-        // System.out.println(hm);
+        System.out.println(hm);
 
-        // //Get Value - O(1)
-        // int val = hm.get("US");
-        // System.out.println(val);
+        //Get Value - O(1)
+        int val = hm.get("US");
+        System.out.println(val);
 
-        // System.out.println(hm.get("Russia"));
+        System.out.println(hm.get("Russia"));
 
         // // containsKey - O(1)
         // System.out.println(hm.containsKey("Brazil"));
@@ -55,22 +55,22 @@ public class Hashing_Basic {
 
 
         // LinkedHashMap
-        LinkedHashMap<String, Integer> lhm = new LinkedHashMap<>();
+        // LinkedHashMap<String, Integer> lhm = new LinkedHashMap<>();
 
-        lhm.put("India", 2000);
-        lhm.put("Brazil", 1200);
-        lhm.put("Ukrain", 2200);
+        // lhm.put("India", 2000);
+        // lhm.put("Brazil", 1200);
+        // lhm.put("Ukrain", 2200);
 
-        System.out.println(lhm);
+        // System.out.println(lhm);
 
         // TreeMap
-        TreeMap<String, Integer> tm = new TreeMap<>();
+        // TreeMap<String, Integer> tm = new TreeMap<>();
 
-        tm.put("Aus", 3600);
-        tm.put("India", 2000);
-        tm.put("Brazil", 3500);
-        tm.put("Chine", 6000);
+        // tm.put("Aus", 3600);
+        // tm.put("India", 2000);
+        // tm.put("Brazil", 3500);
+        // tm.put("Chine", 6000);
 
-        System.out.println(tm);
+        // System.out.println(tm);
     }
 }
