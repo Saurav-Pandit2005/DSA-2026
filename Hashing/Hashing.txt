@@ -278,3 +278,96 @@ Example:
         {Aus=3600, Brazil=3500, Chine=6000, India=2000}         // Sorted Order
         
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** HashSet
+----------------
+
+-> A HashSet in Java is a data structure that stores only unique elements (no duplicates).
+
+-> And provides constant-time performance for basic operations like add, remove, and contains. 
+
+-> It is backed internally by a HashMap and does not maintain any order of elements.
+
+
+    * Key Features of HashSet
+    ----------------------------
+
+        -> No duplicates allowed → automatically ignores repeated elements.
+
+        -> Null allowed → permits one null element.
+
+        -> Same as HashMap Unordered form.
+
+
+    * Common Operations
+    --------------------
+
+    -> Add element: set.add(value)              O(1)
+
+    -> Remove element: set.remove(value)        O(1)
+
+   ->  Check existence: set.contains(value)     O(1)
+
+    -> Size of set: set.size()                  O(1)
+
+    -> Clear all elements: set.clear()          O(1)
+
+    -> Iterate: for (Integer i : set) { ... }   
+
+
+    * HashSet Creation
+    ----------------------   
+
+        HashSet<Integer> set = new HashSet<>();
+
+
+    * Example : 
+    ------------
+
+        // Create a HashSet
+        HashSet <Integer> set =  new HashSet<>();
+
+        // Operations on HashSet
+
+        // add
+        set.add(2);
+        set.add(4);
+        set.add(10);
+
+        System.out.println(set);
+
+        // remove
+        set.remove(4);
+        System.out.println(set);
+
+        // containsKey
+        if(set.contains(2)) {
+            System.out.println("Set Contains 2");
+        }
+
+        // size()
+
+        System.out.println(set.size());
+
+        // clear()
+
+        set.clear();
+        System.out.println(set);
+
+        // isEmpty()
+
+        System.out.println(set.isEmpty());
+
+
+    * Output :
+    -----------
+
+        [2, 4, 10]
+        [2, 10]
+        Set Contains 2
+        2
+        []
+        true
+
+-----------------------------------------------------------------------------------------------------------------------
+
