@@ -374,3 +374,94 @@ Example:
 ** Iteration on HashSet
 -----------------------------
 
+    1) Using Iterators
+    --------------------
+
+    Example :
+
+        HashSet<String> cities = new HashSet<>();
+
+        cities.add("Mumbai");
+        cities.add("Rajkot");
+        cities.add("Hydrabad");
+        cities.add("Chennai");
+
+        Iterator it = cities.iterator();
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+    ------------------------------------------------------
+
+    ->  Here, iterator() gives you a cursor-like object to traverse the set.
+
+    -> hasNext() checks if there’s another element.
+
+    -> next() returns the element.
+
+    ----------------------------------------------------------------------------------
+
+    2) Using Enhanced for loop
+    -----------------------------
+
+    Example :
+    -----------
+
+        HashSet<String> cities = new HashSet<>();
+
+        cities.add("Mumbai");
+        cities.add("Rajkot");
+        cities.add("Hydrabad");
+        cities.add("Chennai");
+
+        for(String city : cities) {
+            System.out.println(city);
+        }
+
+------------------------------------------------------------------------------------------
+
+** LinkesdHashSet   (Order Using Doubly Linked List (DLL))
+-------------------------------------------------------------
+
+-> A LinkedHashSet in Java is a special type of HashSet that preserves the insertion order of elements.
+
+
+    * Key Features
+    ----------------
+
+    -> Implements Set interface → Like HashSet, it stores only unique elements (no duplicates).
+
+    -> Maintains order → Unlike HashSet, it remembers the order in which elements were inserted.
+
+    ->  Backed by LinkedHashMap → Internally uses a LinkedHashMap to maintain ordering.
+
+    -> Performance → Similar to HashSet (constant-time for add, remove, contains).
+
+    -> Null allowed → Can store one null element.
+
+    ->  Not thread-safe → Must synchronize externally if used in multithreaded environments.
+
+
+    * Example :
+    -------------
+
+    LinkedHashSet<String> cities = new LinkedHashSet<>();
+
+        cities.add("Mumbai");
+        cities.add("Rajkot");
+        cities.add("Hydrabad");
+        cities.add("Chennai");
+
+        System.out.println(cities);
+
+    * Output :
+    -----------
+
+    [Mumbai, Rajkot, Hydrabad, Chennai]
+
+-----------------------------------------------------------------------------------------------------------------
+
+** TreeSet      (Sorted in ascending order)
+---------------------------------------------
+
+-> Null Values are NOT allowed.
