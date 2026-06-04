@@ -466,4 +466,30 @@ Example:
 
 -> Null Values are NOT allowed.
 
--> 
+-> A TreeSet in Java is a collection that stores unique elements in sorted order. 
+
+-> It’s part of the java.util package and implements the NavigableSet interface, backed internally by a TreeMap (which uses a Red-Black Tree).
+
+
+    * Key Features
+    -----------------
+
+    -> Sorted Order → Elements are always stored in ascending order (natural ordering or by a custom Comparator).
+
+    -> Unique Elements → Like all Set implementations, duplicates are not allowed.
+
+    -> Underlying DS → Uses a self-balancing Red-Black Tree.
+
+    -> Performance → Operations like add(), remove(), and contains() run in O(log n) time.
+
+    -> Null Handling →
+
+        Null elements not allowed (throws NullPointerException).
+
+    -> Navigational Methods → Provides powerful methods like first(), last(), higher(), lower(), subSet(), etc.
+
+
+    * Example :
+    -------------
+
+    
