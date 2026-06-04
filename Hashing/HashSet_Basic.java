@@ -39,12 +39,14 @@ public class HashSet_Basic {
 
         // Iterations on HashSet
 
-        // HashSet<String> cities = new HashSet<>();
+        HashSet<String> cities = new HashSet<>();
 
-        // cities.add("Mumbai");
-        // cities.add("Rajkot");
-        // cities.add("Hydrabad");
-        // cities.add("Chennai");
+        cities.add("Mumbai");
+        cities.add("Rajkot");
+        cities.add("Hydrabad");
+        cities.add("Chennai");
+
+        System.out.println(cities);
 
         // Iterator it = cities.iterator();
         // while(it.hasNext()) {
@@ -57,14 +59,25 @@ public class HashSet_Basic {
 
         // LinkedHashSet
 
-        LinkedHashSet<String> cities = new LinkedHashSet<>();
+        LinkedHashSet<String> cities2 = new LinkedHashSet<>();
 
-        cities.add("Mumbai");
-        cities.add("Rajkot");
-        cities.add("Hydrabad");
-        cities.add("Chennai");
+        cities2.add("Mumbai");
+        cities2.add("Rajkot");
+        cities2.add("Hydrabad");
+        cities2.add("Chennai");
 
-        System.out.println(cities);
+        System.out.println(cities2);
+
+        // TreeSet
+
+        TreeSet<String> ts = new TreeSet<>();
+
+        ts.add("Bengaluru");
+        ts.add("Delhi");
+        ts.add("Agra");
+        ts.add("Pune");
+        
+        System.out.println(ts);
 
     }
 }
