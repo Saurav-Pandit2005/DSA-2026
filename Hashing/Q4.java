@@ -39,13 +39,14 @@ public class Q4 {
         }
 
         int count = 0;
-
+        HashSet<Integer> inter = new HashSet<>();
         for(int i=0; i<arr2.length; i++) {
             if(set.contains(arr2[i])) {
                 count++;
+                inter.add(arr2[i]);
                 set.remove(arr2[i]);
             }
         }
-        System.out.println(count);
+        System.out.println(inter + " = " + count);
     }
 }
