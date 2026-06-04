@@ -27,6 +27,8 @@ public class Q4 {
             set.add(num);
         }
 
-        System.out.println(set.size());
+        System.out.println(set + " = " + set.size());
+        // System.out.println(set.size());
+
     }
 }
