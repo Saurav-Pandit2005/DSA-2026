@@ -7,7 +7,6 @@ public class ArrayList_Basic {
 
         // Creating a ArrayList
         ArrayList<Integer> list1 = new ArrayList<>();
-        //ArrayList<String> list2 = new ArrayList<>();
 
         // Add Element      O(1)
 
@@ -36,5 +35,14 @@ public class ArrayList_Basic {
         // Contains Element
 
         System.out.println(list1.contains(2000));
+
+        // size of ArrayList
+
+        System.out.println(list1.size());
+
+        for(int i=0; i<list1.size(); i++) {
+            System.out.print(list1.get(i) + " ");
+        }
+        System.out.println();
     }
 }
