@@ -1,0 +1,19 @@
+** What is Oops?
+------------------
+
+-> In Java, OOPs (Object-Oriented Programming System) is a paradigm that organizes code around objects—real-world entities with data (fields) and behavior(methods).
+
+-> It helps make programs modular, reusable, and easier to maintain.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Classes & Objects
+------------------------
+
+    -> Object : Entities in the real worls
+
+        -> Classes : Group of these entities.
+
+    -------------------------------------------------
+
+    
