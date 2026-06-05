@@ -15,6 +15,8 @@ public class ArrayList_Basic {
         list1.add(200);
         list1.add(2000);
 
+        list1.add(3,20000);     // O(n)
+
         System.out.println(list1);
 
         // Get Element      O(1)
@@ -31,6 +33,8 @@ public class ArrayList_Basic {
         System.out.println(list1.set(1, 200));
         System.out.println(list1);
 
-        // 
+        // Contains Element
+
+        System.out.println(list1.contains(2000));
     }
 }
