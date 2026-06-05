@@ -16,6 +16,12 @@ public class Q1 {
 
         System.out.println(list);
 
-        System.out.println(list.reversed());
+        // System.out.println(list.reversed());
+
+        // OR
+
+        // for(int i=list.size()-1; i>=0; i--) {
+        //     System.out.print(list.get(i) + " ");
+        // }
     }
 }
