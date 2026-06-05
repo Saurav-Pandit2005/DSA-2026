@@ -188,7 +188,63 @@
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-** Multi-dimensional ArrayList
-----------------------------------
+** Multi-dimensional ArrayList (2D ArrayList)
+-----------------------------------------------
+
+-> A multi‑dimensional ArrayList in Java simply means an ArrayList that contains other ArrayLists as its elements.
+
+-> Since Java doesn’t have true multi‑dimensional lists built in, we simulate them by nesting collections.
+
+-> Declaration:
+
+    2D → ArrayList<ArrayList<Type>>
 
 
+    * Example :
+    ----------------
+
+         // Main list
+        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+
+        // List1
+        ArrayList<Integer> list1 = new ArrayList<>();
+
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(4);
+        list1.add(5);
+
+        // List2
+        ArrayList<Integer> list2 = new ArrayList<>();
+
+        list2.add(2);
+        list2.add(4);
+        list2.add(6);
+        list2.add(8);
+        list2.add(10);
+
+        // List3
+        ArrayList<Integer> list3 = new ArrayList<>();
+
+        list3.add(3);
+        list3.add(6);
+        list3.add(9);
+        list3.add(12);
+        list3.add(15);
+
+        // add list1, list2, list3 in Main List
+
+        list.add(list1);
+        list.add(list2);
+        list.add(list3);
+
+        System.out.println(list);
+
+    
+    * Output :
+    -------------
+
+        [[1, 2, 3, 4, 5], [2, 4, 6, 8, 10], [3, 6, 9, 12, 15]]
+
+---------------------------------------------------------------------------------------------------------
