@@ -16,4 +16,32 @@
 
     -------------------------------------------------
 
-    
+    * Example 
+    -----------
+
+        class Student {
+            String name;   // field
+            int rollNo;    // field
+
+            void display() {   // method
+                System.out.println(name + " - " + rollNo);
+            }
+        }
+
+        public class Main {
+            public static void main(String[] args) {
+                Student s1 = new Student();   // object creation
+                s1.name = "Saurav";
+                s1.rollNo = 101;
+                s1.display();   // calling method
+            }
+        }
+
+
+    * Output :
+    -------------
+
+    Saurav - 101
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
