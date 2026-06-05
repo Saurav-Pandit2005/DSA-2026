@@ -1,3 +1,37 @@
 ** Introduction to ArrayList
 --------------------------------
 
+-> An ArrayList in Java is a resizable array from the java.util package that can dynamically grow or shrink as elements are added or removed, unlike normal arrays which have a fixed size. 
+
+-> It stores elements in insertion order, allows duplicates, and provides methods like add(), get(), set(), and remove() for easy manipulation. 
+
+-> ArrayList is a part of Java Collection Framework.
+
+    * Key Features of ArrayList
+    -----------------------------
+
+        -> Dynamic resizing: Automatically expands or shrinks when elements are added or removed.
+
+        -> Index-based access: Elements can be accessed directly using indices, similar to arrays.
+
+        -> Duplicates allowed: Unlike sets, ArrayList permits duplicate elements.
+
+        -> Insertion order maintained: Elements remain in the order they were added.
+
+
+    * Array v/s ArrayList
+    -----------------------
+
+             Array                                ArrayList
+
+        -> fixed size                           -> dynamic size  
+
+        -> primitive data types                 -> primitive data types can't
+            can be stored                           be stored directly
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Operations on ArrayList
+-----------------------------
+
+
