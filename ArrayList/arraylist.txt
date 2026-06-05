@@ -116,6 +116,17 @@
 -> This lets you sort elements in ascending order by default, and you can customize sorting with comparators for descending or custom rules.
 
 
+    * Key Points
+    --------------
+
+        -> Use Collections.sort(list) for ascending order.
+
+        -> Use Collections.sort(list, Collections.reverseOrder()) for descending order.
+
+        -> Use Comparator for custom sorting logic.
+
+        -> Sorting modifies the original list (in-place).
+
     * Example :
     -------------
 
@@ -141,4 +152,43 @@
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-** 
+** ArrayList (Implementation in java)
+------------------------------------------
+
+    * Internal Implementation of ArrayList
+    ----------------------------------------
+
+    1) Backed by an Array
+
+        -> Internally, ArrayList uses a dynamic array (Object[] elementData) to store elements.
+
+        -> When you add elements and the array is full, it creates a new larger array and copies the old elements into it.
+
+    2) Default Capacity
+
+        -> When you create new ArrayList(), it starts with a default capacity (usually 10).
+
+        -> If you specify new ArrayList(20), it starts with capacity 20.
+
+    3) Resizing Mechanism
+
+        -> When capacity is exceeded, the array grows by about 50% of its current size.
+
+        -> Example: If capacity = 10 and you add the 11th element, it resizes to 15.
+
+    4) Index-based Access
+
+        -> Since it’s backed by an array, accessing elements (get(index)) is O(1) (constant time).
+
+    5) Insertion & Removal
+
+        -> Adding at the end is usually O(1) (amortized).
+
+        -> Adding/removing in the middle requires shifting elements → O(n).
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+** Multi-dimensional ArrayList
+----------------------------------
+
+
