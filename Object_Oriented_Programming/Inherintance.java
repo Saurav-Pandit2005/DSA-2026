@@ -1,24 +1,18 @@
 package Object_Oriented_Programming;
 
-class Animal {
-    String color;
+// Single Inherintance
 
-    void eat() {
-        System.out.println("eats");
-    }
+// class Animal {
+//     String color;
 
-    void breathe() {
-        System.out.println("breathe");
-    }
-}
+//     void eat() {
+//         System.out.println("eats");
+//     }
 
-class Mammal extends Animal {
-    int legs;
-}
-
-class Dog extends Mammal {
-    String breed;
-}
+//     void breathe() {
+//         System.out.println("breathe");
+//     }
+// }
 
 // class fish extends Animal {
 //     int fins;
@@ -28,15 +22,79 @@ class Dog extends Mammal {
 //     }
 // }
 
+// public class Inherintance {
+//     public static void main(String[] args) {
+//         fish shark = new fish();
+//         shark.breathe();
+//     }   
+// }
+
+// ------------------------------------------------------------
+
+// Multi Level Inherintance
+
+// class Animal {
+//     String color;
+
+//     void eat() {
+//         System.out.println("eats");
+//     }
+
+//     void breathe() {
+//         System.out.println("breathe");
+//     }
+// }
+
+// class Mammal extends Animal {
+//     int legs;
+// }
+
+// class Dog extends Mammal {
+//     String breed;
+// }
+
+// public class Inherintance {
+//     public static void main(String[] args) {
+
+//         Dog Doggy = new Dog();
+//         Doggy.eat();
+
+//         Doggy.legs = 4;
+//         System.out.println(Doggy.legs);
+//     }  
+// }
+
+// ------------------------------------------------------------
+
+// Hierarchical Inheritance
+
+class Animal {
+    String color;
+
+    void animal() {
+        System.out.println("Animals..");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Bark..");
+    }
+}
+
+class Cat extends Animal {
+    void meow() {
+        System.out.println("Meowww....");
+    }
+}
+
 public class Inherintance {
     public static void main(String[] args) {
-        // fish shark = new fish();
-        // shark.breathe();
 
-        Dog Doggy = new Dog();
-        Doggy.eat();
+        Dog d1 = new Dog();
+        d1.bark();
 
-        Doggy.legs = 4;
-        System.out.println(Doggy.legs);
-    }   
+        Cat c1 = new Cat();
+        c1.meow();
+    }
 }
