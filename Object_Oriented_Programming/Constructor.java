@@ -5,6 +5,7 @@ package Object_Oriented_Programming;
 class Student {
     String name;
     int age;
+    String password;
 
     // Default Constructor
     // Student() {
@@ -21,6 +22,19 @@ class Student {
     // }
 
     // Copy Constructor
+    Student() {
+        System.out.println("Constructor is called..!");
+    }
+
+    Student(Student s1) {
+        this.name = s1.name;
+        this.age = s1.age;
+        this.password = s1.password;
+
+        System.out.println("Name : " + s1.name);
+        System.out.println("Age : " + s1.age);
+        System.out.println("Password : " + s1.password);
+    }
 }
 
 public class Constructor {
@@ -38,6 +52,13 @@ public class Constructor {
         // System.out.println(s3.age);
 
         // Copy Constructor
-        
+        Student s1 = new Student();
+
+        s1.name = "Saurav";
+        s1.age = 20;
+        s1.password ="abcd";
+
+        Student s2 = new Student(s1);
+        s2.password = "xyz";
     }
 }
