@@ -561,4 +561,41 @@ this : this keyword is used to refer to the current object
     3) Hierarchial Inherintance
     ------------------------------
 
-    
+        -> Multiple classes inherit from the same parent.
+
+        * Example :
+        -------------
+        
+            class Animal {
+                String color;
+
+                void animal() {
+                    System.out.println("Animals..");
+                }
+            }
+
+            class Dog extends Animal {
+                void bark() {
+                    System.out.println("Bark..");
+                }
+            }
+
+            class Cat extends Animal {
+                void meow() {
+                    System.out.println("Meowww....");
+                }
+            }
+
+            public class Inherintance {
+                public static void main(String[] args) {
+
+                    Dog d1 = new Dog();
+                    d1.bark();
+
+                    Cat c1 = new Cat();
+                    c1.meow();
+                }
+            }
+
+    -----------------------------------------------------------------------
+
