@@ -25,6 +25,14 @@ class Student {
     }
 }
 
+// class BankAccount {
+//     public String username;
+//     private String password;
+//     public void setPassword(String pwd) {
+//         password = pwd;
+//     }
+// }
+
 public class Oops_Basic {
     public static void main(String[] args) {
         Pen p1 = new Pen();     // Created a pen object called p1
@@ -35,6 +43,13 @@ public class Oops_Basic {
         System.out.println(p1.color);
         System.out.println(p1.tip);
 
+        // BankAccount Class
+
+        // BankAccount myAccount = new BankAccount();
+        // myAccount.username = "SauravPandit";
+        // myAccount.setPassword("abc");
+
+        
     }
 }
 
