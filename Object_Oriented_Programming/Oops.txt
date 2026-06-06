@@ -194,3 +194,75 @@ this : this keyword is used to refer to the current object
 ** Types of Constructors
 --------------------------
 
+    1) Default Constructor (Non-Parameterized)
+
+        -> No parameters.
+
+        -> Provides default values.
+
+        ---------------------------------
+
+        * Example :
+        -------------
+
+            class Student {
+                String name;
+                int age;
+
+                Student() {
+                    System.out.println("Constructor is called....!");
+                }
+
+                Student(String name) {
+                    this.name = name;
+                }
+            }
+
+            // Main Class
+
+            public static void main(String[] args) {
+                Student s1 = new Student();
+            }
+    --------------------------------------------------------------------------------------------
+
+    2) Parameterized Constructor
+
+        -> Accepts arguments to initialize fields.
+
+        * Example :
+        --------------
+
+            class Student {
+                String name;
+                int age;
+
+                Student(String name) {
+                    this.name = name;
+                }
+
+                Student(int age) {
+                    this.age = age;
+                }
+            }
+
+            // Main Class
+
+            public static void main(String[] args) {
+
+                Student s2 = new Student("Saurav");
+                System.out.println(s2.name);
+
+                Student s3 = new Student(20);
+                System.out.println(s3.age);
+            }
+    -------------------------------------------------------------------------
+
+    3) Copy Constructor
+
+        -> A copy constructor takes an object of the same class as a parameter.
+
+        * Example :
+        -------------   
+
+            
+
