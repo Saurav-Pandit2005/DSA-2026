@@ -1,5 +1,7 @@
 package Object_Oriented_Programming;
 
+// Encapsulation
+
 class Pen {
     // Properties + Function
 
