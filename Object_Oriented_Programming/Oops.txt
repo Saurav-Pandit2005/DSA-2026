@@ -420,3 +420,145 @@ this : this keyword is used to refer to the current object
 
 ** Inherintance
 ------------------
+
+-> Inheritance in Java is one of the core concepts of Object-Oriented Programming (OOP). 
+
+-> It allows one class (child/subclass) to reuse the properties and behaviors of another class (parent/superclass).
+
+// OR
+
+-> Inherintance is when properties & methods of base class are passed on to a derived class.
+
+
+    * Key Points
+    ---------------
+
+    -> Superclass (Parent) → The class whose features are inherited.
+
+    -> Subclass (Child) → The class that inherits from the parent.
+
+    -> Keyword: extends.
+
+    -> Promotes code reusability and method overriding.
+
+    * Example :
+    -------------
+
+        class Animal {
+            String color;
+
+            void eat() {
+                System.out.println("eats");
+            }
+
+            void breathe() {
+                System.out.println("breathe");
+            }
+        }
+
+        class fish extends Animal {
+            int fins;
+
+            void swim() {
+                System.out.println("swim");
+            }
+        }
+
+        public class Inherintance {
+            public static void main(String[] args) {
+                fish shark = new fish();
+                shark.breathe();
+            }   
+        }
+
+----------------------------------------------------------------------------------------------------------------------
+
+** Types of Inherintance
+----------------------------
+
+    1) Single Level Inherintance
+    ------------------------------
+
+        -> Base Class ------> Derived Class
+
+            // OR
+
+        -> One class inherits from another.
+
+        * Example :
+        --------------
+
+            class Animal {
+                String color;
+
+                void eat() {
+                    System.out.println("eats");
+                }
+
+                void breathe() {
+                    System.out.println("breathe");
+                }
+            }
+
+            class fish extends Animal {
+                int fins;
+
+                void swim() {
+                    System.out.println("swim");
+                }
+            }
+
+            public class Inherintance {
+                public static void main(String[] args) {
+                    fish shark = new fish();
+                    shark.breathe();
+                }   
+            }
+
+
+    ------------------------------------------------------------------------------
+
+    2) Multi Level Inherintance
+    ------------------------------
+
+        -> Base Class ------> Derived Class -------> Derived Class
+
+
+        * Example :
+        -------------
+
+            class Animal {
+                String color;
+
+                void eat() {
+                    System.out.println("eats");
+                }
+
+                void breathe() {
+                    System.out.println("breathe");
+                }
+            }
+
+            class Mammal extends Animal {
+                int legs;
+            }
+
+            class Dog extends Mammal {
+                String breed;
+            }
+
+            public static void main(String[] args) {
+
+                Dog Doggy = new Dog();
+                Doggy.eat();
+
+                Doggy.legs = 4;
+                System.out.println(Doggy.legs);
+            }  
+
+    -----------------------------------------------------------------------
+
+    3) Hierarchial Inherintance
+    ------------------------------
+
+    
