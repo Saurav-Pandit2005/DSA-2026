@@ -129,3 +129,25 @@ this : this keyword is used to refer to the current object
         Saurav - 21
 
 ---------------------------------------------------------------------------------------------------------
+
+** Encapsulation
+-------------------
+
+-> There are 4 pillars in Oop (Encapsulation, Inherintance, Abstraction, Polymorphism).
+
+-> Encapsulation in Java is one of the four pillars of OOP.
+
+-> It means binding data (fields) and methods (functions) together inside a single unit (class) and restricting direct access to that data. 
+
+// OR
+
+-> Encapsulation is defined as the wrapping up of data & methods under a single unit.
+
+-> It also implements data hiding using Access modifiers.
+
+-> Encapsulation like a Capsul contains = > [ data(properties) + methods(functions) ]
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Constructors
+-----------------
