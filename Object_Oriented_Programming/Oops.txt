@@ -151,3 +151,46 @@ this : this keyword is used to refer to the current object
 
 ** Constructors
 -----------------
+
+-> Constructor is a special method which is invoked automatically at the time of object creation.
+
+
+    * Key Points
+    ---------------
+
+        -> Constructors have the same name as class or structure.
+        -> Constructors don't have a return type. (Not even void)
+        -> Constructors are only called once, at object creation.
+        -> Memory allocation happens when Constructor is called.
+
+    * Example :
+    ------------
+
+        class Student {
+            String name;
+            int rollNo;
+
+            // Default constructor
+            Student() {
+                name = "Unknown";
+                rollNo = 0;
+            }
+
+            void display() {
+                System.out.println(name + " - " + rollNo);
+            }
+        }
+
+        public class Main {
+            public static void main(String[] args) {
+                Student s1 = new Student();              // calls default constructor
+
+                s1.display();  // Output: Unknown - 0
+            }
+        }
+
+--------------------------------------------------------------------------------------------------------------
+
+** Types of Constructors
+--------------------------
+
