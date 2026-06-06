@@ -400,3 +400,23 @@ this : this keyword is used to refer to the current object
         }
 
 -------------------------------------------------------------------------------------------------------------
+
+** Destructors
+----------------
+
+-> In Java, there is no explicit destructor like in C++ because Java uses Garbage Collection (GC) to automatically manage memory.
+
+
+    * Key Points
+    --------------
+
+        -> Destructor in C++: A special method called when an object goes out of scope, used to free resources.
+
+        -> Java’s Approach: Objects are destroyed automatically by the Garbage Collector when they are no longer referenced.
+
+        -> You don’t need to manually delete objects.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+** Inherintance
+------------------
