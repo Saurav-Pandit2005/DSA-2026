@@ -48,3 +48,21 @@
 ** Access Modifiers
 -------------------------
 
+-> In Java, access modifiers define the visibility and accessibility of classes, methods, and variables. 
+
+-> There are four types: public, private, protected, and default (package-private). 
+
+
+    * Comparison Table
+    -------------------
+
+    Modifier	Same    Same       Subclass       Other
+                Class	Package	 (diff package)	 Packages
+    --------------------------------------------------------
+
+	Public      ✅	    ✅	       ✅	        ✅
+    Private	    ✅	    ❌	       ❌	        ❌
+    Protected	✅	    ✅	       ✅	        ❌
+    Default	    ✅	    ✅	       ❌	        ❌
+
+-------------------------------------------------------------------------------------------------------------
