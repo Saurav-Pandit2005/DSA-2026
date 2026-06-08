@@ -599,3 +599,86 @@ this : this keyword is used to refer to the current object
 
     -----------------------------------------------------------------------
 
+    4) Hybrid Inherintance
+    --------------------------
+
+    ->      Animal ----> Dog,   Dog ---> Puppy
+            Animal ----> Cat
+
+
+        * Example :
+        -------------
+      
+            class Animal {
+                void animal() {
+                    System.out.println("Animal..");
+                }
+            }
+
+            class Fish extends Animal {
+                void fish() {
+                    System.out.println("fish..");
+                }
+            }
+
+            class Shark extends Fish {
+                void shark() {
+                    System.out.println("Shark..");
+                }
+            }
+
+            class Whale extends Fish {
+                void whale() {
+                    System.out.println("Whale..");
+                }
+            }
+
+            class Bird extends Animal {
+                void bird() {
+                    System.out.println("Bird..");
+                }
+            }
+
+            class Mammle extends Animal {
+                void mammle() {
+                    System.out.println("Mammle..");
+                }
+            }
+
+            class Dog extends Animal {
+                void dog() {
+                    System.out.println("Dog..");
+                }
+            }
+
+            class Cat extends Mammle {
+                void cat() {
+                    System.out.println("Cat..");
+                }
+            }
+
+            class Human extends Mammle {
+                void human() {
+                    System.out.println("Human...");
+                }
+            }
+
+            public class Inherintance {
+                public static void main(String[] args) {
+                    Human h1 = new Human();
+                    h1.human();
+                }
+            }
+
+-------------------------------------------------------------------------------------
+
+    5) Multiple Inherintance
+    --------------------------
+
+        -> But they supported interface so that offically not part of interfaces in java.
+
+------------------------------------------------------------------------------------------------------------------
+
+** Polymorphism
+-------------------
+
