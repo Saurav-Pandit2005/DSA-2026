@@ -787,3 +787,17 @@ this : this keyword is used to refer to the current object
 
 ** Abstraction
 -----------------
+
+-> Hidding all the unnecessary details and showing only the importatnr parta to the user.
+
+-> Abstraction is implementing two ways :
+
+    1) Using Abstract Class
+    2) Using Interfaces
+
+    --------------------------------
+
+    ** 1) Using Abstract Class
+    -----------------------------
+
+-------------------------------------------------------------------------------------------------------
