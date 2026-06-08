@@ -9,3 +9,21 @@
 
 -------------------------------------------------------------------------------------------------------------------------
 
+** Creation of 2D Array
+--------------------------
+
+        dataType[][] arrayName = new dataType[rows][columns];
+        -------------------------------------------------------
+
+           -> dataType → Type of elements (int, float, String, etc.)
+
+           -> rows → Number of rows
+
+           -> columns → Number of columns
+
+        * Example :
+        --------------
+
+                int[][] numbers = new int[3][4]; // 3 rows, 4 columns
+
+---------------------------------------------------------------------------------
