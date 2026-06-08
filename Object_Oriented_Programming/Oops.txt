@@ -682,3 +682,54 @@ this : this keyword is used to refer to the current object
 ** Polymorphism
 -------------------
 
+-> Polymorphism in Java is one of the four pillars of OOP. 
+
+->  The word means “many forms”. 
+
+-> In Java, polymorphism allows the same method or object to behave differently depending on the context.
+
+
+    * Types of Polymorphism in Java
+    ---------------------------------
+
+    1) Compile-Time Polymorphism (Method Overloading)
+    ---------------------------------------------------
+
+        -> Defining multiple methods with the same name but different parameter lists.
+
+        -> Decided at compile time.
+
+        * Example :
+        --------------
+
+            //   Compile-Time Polymorphism (Method Overloading)
+        
+            class Calculator {
+                int sum(int a, int b) {
+                    return a+b;
+                }
+
+                float sum(float a, float b) {
+                    return a+b;
+                }
+
+                int sum(int a, int b, int c) {
+                    return a+b+c;
+                }
+            }
+
+            public class Polymorphism {
+                public static void main(String[] args) {
+                    Calculator c1 = new Calculator();
+                    System.out.println(c1.sum(20, 30));
+                    System.out.println(c1.sum((float)31.5, (float)18.5));
+                    System.out.println(c1.sum(20, 30, 50));
+                }
+            }
+
+    -------------------------------------------------------------------------------------------------------------------
+
+    2) Runtime Polymorphism (Method Overriding)
+    ---------------------------------------------
+
+        -> 
