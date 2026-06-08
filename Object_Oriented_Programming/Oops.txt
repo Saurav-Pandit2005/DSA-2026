@@ -732,4 +732,35 @@ this : this keyword is used to refer to the current object
     2) Runtime Polymorphism (Method Overriding)
     ---------------------------------------------
 
-        -> 
+        -> when a subclass provides its own implementation of a method defined in the parent class.
+
+        -> Decided at runtime using dynamic method dispatch..
+
+        * Example :
+        --------------
+
+        class Animal {
+            void eat() {
+                System.out.println("eats anything..");
+            }
+        }
+
+        class Deer extends Animal {
+            void eat() {
+                System.out.println("eat grass..");
+            }
+        }
+
+        public class Polymorphism {
+            public static void main(String[] args) {
+                Deer d1 = new Deer();
+                d1.eat();
+            }
+        }
+
+----------------------------------------------------------------------------------------------------------------------
+
+** Packages in Java
+-----------------------
+
+            
