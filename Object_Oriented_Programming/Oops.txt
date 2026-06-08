@@ -763,4 +763,27 @@ this : this keyword is used to refer to the current object
 ** Packages in Java
 -----------------------
 
-            
+-> In Java, a package is a way to group related classes, interfaces, and sub-packages together. 
+
+    
+    * Types of Packages
+    --------------------
+
+        1) Built-in Packages (Java API)
+        ----------------------------
+
+            java.util → Utility classes (Collections, Date, Scanner, Random).
+
+        2) User-defined Packages
+        ---------------------------
+
+            Create a class with a package statement at the top.
+
+            Compile with javac -d . FileName.java (creates folder structure).
+
+            Import and use in another class.
+
+--------------------------------------------------------------------------------------------------------------
+
+** Abstraction
+-----------------
