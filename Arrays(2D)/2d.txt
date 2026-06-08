@@ -1,0 +1,11 @@
+** Introduction to 2D Array
+------------------------------
+
+-> Definition: A 2D array is a collection of elements arranged in rows and columns.
+
+        // OR
+
+-> A 2D array in Java is essentially an array of arrays, used to store data in a tabular format (rows and columns).
+
+-------------------------------------------------------------------------------------------------------------------------
+
