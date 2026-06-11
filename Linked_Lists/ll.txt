@@ -1,0 +1,6 @@
+What is Linked List?
+----------------------
+
+-> A LinkedList in Java is a data structure from the Java Collections Framework that stores elements as nodes in a doubly linked list, making insertions and deletions faster than ArrayList, especially in the middle or beginning of the list. 
+
+-> It is part of java.util and implements both the List and Deque interfaces.
