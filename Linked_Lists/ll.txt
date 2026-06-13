@@ -4,3 +4,33 @@ What is Linked List?
 -> A LinkedList in Java is a data structure from the Java Collections Framework that stores elements as nodes in a doubly linked list, making insertions and deletions faster than ArrayList, especially in the middle or beginning of the list. 
 
 -> It is part of java.util and implements both the List and Deque interfaces.
+
+
+** Head & Tail in LinkedList
+---------------------------------
+
+-> In a Linked List, the terms Head and Tail refer to the special nodes that mark the beginning and end of the list:
+
+
+    * Head
+    ----------
+
+        -> The Head is the first node of the linked list.
+
+        -> It acts as the entry point to the list — without the head, you cannot traverse the list.
+
+        -> In Java’s LinkedList class, the head is managed internally, but conceptually it points to the first element.
+
+        -> Example: If the list is [10 → 20 → 30], the head points to 10.
+
+
+    * Tail
+    --------
+
+        -> The Tail is the last node of the linked list.
+
+        -> Its next reference is always null (since there’s no node after it).
+
+        -> In a doubly linked list (like Java’s LinkedList), the tail also has a prev pointer to the second-last node.
+
+        -> Example: In [10 → 20 → 30], the tail points to 30.
