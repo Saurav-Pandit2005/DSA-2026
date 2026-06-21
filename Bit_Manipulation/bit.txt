@@ -256,3 +256,43 @@
         Output : 20
 
     ---------------------------------------------------------------------
+
+    6) Binary Right Shift >>
+    --------------------------
+
+    Rules
+
+    -> if a >> b then In a remove first two bits in Right section ,
+    
+    -> then put all remain number start with first place of Right section,
+    
+    -> then at the left 2 space are empty so fill with 0.
+
+    * Example
+    ----------
+
+    (6 >> 1)         A = 000110  
+
+                0 0 0 1 1 0
+                ----------- 
+                0 0 0 1 1 _    
+                ----------- 
+                _ 0 0 0 1 1
+                ------------
+                0 0 0 0 1 1       = (3)   In Decimal
+
+    * Formula
+    -----------
+
+    (a >> b) = a / 2^b
+
+    (6 >> 1) = 6 / 1^1  = 6 / 1 = 3 
+
+    * Programming Example 
+    -----------------------
+
+        System.out.println(6 >> 1);      
+
+        Output : 3
+    
+---------------------------------------------------------------------------------------------
