@@ -210,9 +210,49 @@
 
     ** Here Solution is !...
     --------------------------
-    
+
     -> First find One's Complement means (~) then find Two's Complement
         means +1 add in One's Complement.
 
     -> So You can find Answer as a Positive. 
     -----------------------------------------------------------
+
+    5) Binary left Shift <<
+    --------------------------
+
+    Rules
+
+    -> if a << b then In a remove first two bits in left section ,
+    
+    -> then put all remain number start with first place of left section,
+    
+    -> then at the right 2 space are empty so fill with 0.
+
+    * Example
+    ----------
+
+    (5 << 2)         A = 000101  
+
+                0 0 0 1 0 1
+                ----------- 
+                _ _ 0 1 0 1     
+                ----------- 
+                0 1 0 1 _ _
+                ------------
+                0 1 0 1 0 0       = (20)   In Decimal
+
+    * Formula
+    -----------
+
+    (a << b) = a * 2^b
+
+    (5 << 2) = 5 * 2^2  = 5 * 4 = 20 
+
+    * Programming Example 
+    -----------------------
+
+        System.out.println(5 << 2);      
+
+        Output : 20
+
+    ---------------------------------------------------------------------
