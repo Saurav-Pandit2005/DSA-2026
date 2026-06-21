@@ -8,5 +8,8 @@ public class Bit_Baisc {
 
         // Binary OR |
         System.out.println(5 | 6);
+
+        // Binary XOR ^
+        System.out.println(5 ^ 6);
     }
 }
