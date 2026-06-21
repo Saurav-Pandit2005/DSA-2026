@@ -184,5 +184,35 @@
                  ~  1 0 1
                  ---------- 
                     0 1 0       = (2)   // In decimal
-                 -----------   
+                 -----------  
+
+    * Programming Example 
+    -----------------------
+
+        System.out.println(~5);      
+
+        Output : -6
+
+    --------------------------------
+
+    ** Why Here Output is -6 ?
+
+    -> LSB = Least Significant Bit
+    -> MSB = Most Significant Bit
+
+    Example : 1011  -> Here LSB = 1, MSB = 1
+
+    if any binary number using NOT (~) then all the binary Number reverse (0->1) and (1->0).
+
+    so if any changes after revrse and MSB Contains 0 so that is positive number if 1 then negative number..
+
+    ----------------------------------------------------------------------------------------------------------
+
+    ** Here Solution is !...
+    --------------------------
+    
+    -> First find One's Complement means (~) then find Two's Complement
+        means +1 add in One's Complement.
+
+    -> So You can find Answer as a Positive. 
     -----------------------------------------------------------
