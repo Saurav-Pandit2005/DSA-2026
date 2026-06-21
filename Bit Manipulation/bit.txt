@@ -1,0 +1,10 @@
+** Introduction to Bit Manipulation?
+---------------------------------------
+
+-> Bit manipulation means performing operations at the binary (bit) level of integers.
+
+-> Binary Number System     (0 & 1)
+--------------------------------------------------
+-> Decimal Number System    (0,1,2,3,4,5,6,7,8,9)       (optinal)
+
+-----------------------------------------------------------------------------------------
