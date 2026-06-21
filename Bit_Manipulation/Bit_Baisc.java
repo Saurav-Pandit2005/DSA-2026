@@ -1,0 +1,9 @@
+package Bit_Manipulation;
+
+public class Bit_Baisc {
+    public static void main(String[] args) {
+        
+        // Binary AND &
+        System.out.println(5 & 6);
+    }
+}
