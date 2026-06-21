@@ -11,5 +11,8 @@ public class Bit_Baisc {
 
         // Binary XOR ^
         System.out.println(5 ^ 6);
+
+        // Binary One's Complement (NOT) ~
+        System.out.println(~5);
     }
 }
