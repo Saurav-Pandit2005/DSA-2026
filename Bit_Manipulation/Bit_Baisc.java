@@ -14,5 +14,8 @@ public class Bit_Baisc {
 
         // Binary One's Complement (NOT) ~
         System.out.println(~5);
+
+        // Binary Left Shift <<
+        System.out.println(5<<2);
     }
 }
