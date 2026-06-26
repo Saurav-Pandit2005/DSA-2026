@@ -394,3 +394,43 @@
         }
 
     -----------------------------------------------------------------------------------------
+
+    2) Clear ith Bit
+    ---------------
+    
+    -> To clear (set to 0) the i-th bit of a number, we use a bit mask with 1 << i.
+
+    -> Then apply bitwise AND (&) with the NOT (~) of the mask.
+
+    -> This ensures the i-th position becomes 0, while all other bits remain unchanged.
+
+    * Formula
+    ----------
+
+        𝑛 = 𝑛 & ∼(1<<𝑖)
+
+        -> 1 << i → creates a mask with only the i-th bit set.
+
+        -> ~ → inverts the mask (all bits 1 except the i-th bit).
+
+        -> & → clears that bit to 0.
+
+    * Programming Example
+    ----------------------
+
+    // Set ith Bit
+
+        package Bit_Manipulation;
+
+        public class Q4 {
+            public static int Cleat_ith_Bit(int n, int i) {
+                int bitMask = ~(1<<i);
+                return n & bitMask;
+            }
+            public static void main(String[] args) {
+                int n = 10, i = 1;
+                System.out.println(Cleat_ith_Bit(n, i));
+            }
+        }
+
+    -------------------------------------------------------------------------------------------
