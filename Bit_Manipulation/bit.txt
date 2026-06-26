@@ -358,5 +358,40 @@
     ---------------
 
     
+    -> To set the i-th bit of a number, we use a bit mask with 1 << i.
+
+    -> Then apply bitwise OR (|).
+
+    -> OR ensures that the i-th position becomes 1, regardless of its previous value.
+
+    * Formula
+    ----------
+
+        𝑛 = 𝑛 ∣ (1<<𝑖)
+
+        -> 1 << i → creates a mask with only the i-th bit set.
+
+        -> | → sets that bit to 1 (others remain unchanged).
+
+
+    * Programming Example
+    ----------------------
+
+    // Set ith Bit
+
+        package Bit_Manipulation;
+
+        public class Q3 {
+            // Set ith Bit
+
+            public static int Set_ith_Bit(int n, int i) {
+                int bitMask = 1<<i;
+                return n | bitMask;
+            }
+            public static void main(String[] args) {
+                int n = 10, i = 2;
+                System.out.println(Set_ith_Bit(n, i));
+            }
+        }
 
     ------------------------------------------------------------------
