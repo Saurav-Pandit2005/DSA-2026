@@ -49,3 +49,11 @@
 
 -> Arrays.sort(array_name, si, ei, Collections.reverseOrder())      // si - starting index    ei - ending index
 -----------------------------------------------------------------------------------------------------------------
+
+** Counting Sort
+-------------------
+
+-> Counting Sort Using for Small Range Arrays or Something..
+
+-> In Some Case Counting Sort Perform linear Complexity O(n).
+---------------------------------------------------------------------------------------------------------------------
