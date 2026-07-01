@@ -1,7 +1,4 @@
-/*  
-    {Sorting : Arrange in an Order}
-    Bubble Sorting --> large elements come to the end of array by swapping with adjacent element 
-*/
+// Bubble Sort
 
 package Sorting;
 
