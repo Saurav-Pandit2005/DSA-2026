@@ -1,3 +1,5 @@
+// Clear ith Bit
+
 package Bit_Manipulation;
 
 public class Q4 {
