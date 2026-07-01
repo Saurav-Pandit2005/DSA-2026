@@ -1,0 +1,13 @@
+** What is Sorting?
+----------------------
+
+-> Arrange in an Order.
+--------------------------
+
+** Bubble Sort
+----------------
+
+-> large elements come to the end of array by swapping with adjacent element 
+------------------------------------------------------------------------------
+
+** 
