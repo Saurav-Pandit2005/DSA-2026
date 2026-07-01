@@ -22,3 +22,30 @@
 -> pick an element (from unsorted part) & place in the right position in sorted part.
 --------------------------------------------------------------------------------------
 
+** Inbuilt Sort
+-----------------
+ 
+* Inbuilt Sort (Ascending Order)
+----------------------------------
+
+-> import java.util.Arrays;
+
+-> Arrays.sort(array_name);
+-> Time Complexity = O(n logn)
+
+// Using Indexs
+
+-> Arrays.sort(array_name, si, ei)      // si - starting index     ei - ending index (ei is non enclusive)
+--------------------------------------------------------------------------------------------------------------
+
+* Inbuilt Sort (Descending Order)
+-----------------------------------
+
+-> For Descending Order Inbuilt Sort Function we use Collections in java.
+
+-> import java.util.Collections;
+
+-> Arrays.sort(array_name, Collections.reverseOrder())
+
+-> Arrays.sort(array_name, si, ei, Collections.reverseOrder())      // si - starting index    ei - ending index
+-----------------------------------------------------------------------------------------------------------------
