@@ -16,3 +16,9 @@
 -> pick the smallest (from unsorted), put it at the begining.
 ----------------------------------------------------------------
 
+** Insertion Sort
+------------------
+
+-> pick an element (from unsorted part) & place in the right position in sorted part.
+--------------------------------------------------------------------------------------
+
