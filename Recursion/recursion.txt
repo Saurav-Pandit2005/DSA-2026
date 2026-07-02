@@ -72,4 +72,64 @@ Why Use Recursion?
 -> Check Q1.java
 
 
-**
+** Call Stack in Recursion
+-----------------------------
+
+-> The call stack is how Java keeps track of recursive calls in memory. 
+    Each time a method calls itself, a new stack frame is pushed onto the stack; when a call returns, its frame is popped off.
+
+
+    * What's in a Stack Frame
+    --------------------------
+
+    -> Each frame stores:
+
+        => The method's local variables and parameters
+        => The return address (where to resume execution after the call finishes)
+        => The current state of execution
+
+    -> Let's trace factorial(4):Here's how the call stack builds up and unwinds for factorial(4):
+
+        => The diagram shows the Java call stack while computing factorial(4) using the recursive method:
+    
+        public static int factorial(int n) {
+            if (n == 0 || n == 1) {
+                return 1;
+            }
+            return n * factorial(n - 1);
+        }
+    
+        => Each box in the diagram represents one "stack frame" - a chunk of memory Java creates every time a method is called. 
+            The stack is drawn from top to bottom:
+    
+        factorial(1)   <- Top of stack (deepest / most recent call)
+        factorial(2)
+        factorial(3)
+        factorial(4)
+        main()         <- Bottom of stack (where everything started)
+
+    -------------------------------------------------------------------------------------------------------------------------------    
+
+    * Two Phases
+    --------------
+
+        1. Growing (winding up) — Each call to factorial(n) pushes a new frame onto the stack before it can compute anything, 
+            because it needs the result of factorial(n-1) first. The stack keeps growing until it hits the base case (factorial(1)), 
+                which is the only frame that doesn't need to wait on another call.
+
+        2. Shrinking (unwinding) — Once the base case returns, each frame below it can finally finish its pending multiplication and pop off, 
+            sending its result down to the frame that called it — until control returns to main().
+
+    ---------------------------------------------------------------------------------------------------------------------------------------------
+
+    * Why This Matters
+    --------------------
+
+        Memory cost: Each frame consumes stack memory. Deep recursion (e.g., factorial(100000)) can exhaust the stack and throw a StackOverflowError, 
+            since Java's default stack size is limited (usually 512KB–1MB).
+
+        Order of execution: Notice that nothing gets multiplied until the unwinding phase starts — this is why System.out.println calls placed before 
+            the recursive call print in a different order than ones placed after it.
+
+    ----------------------------------------------------------------------------------------------------------------------------------------------------
+
