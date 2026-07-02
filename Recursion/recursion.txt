@@ -131,5 +131,13 @@ Why Use Recursion?
         Order of execution: Notice that nothing gets multiplied until the unwinding phase starts — this is why System.out.println calls placed before 
             the recursive call print in a different order than ones placed after it.
 
-    ----------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Stack Overflow in Recursion
+--------------------------------
+
+-> A StackOverflowError happens when the call stack runs out of memory because too many frames have been pushed without being popped — usually 
+        from recursion that never reaches its base case (or reaches it too late).
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
