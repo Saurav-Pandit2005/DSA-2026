@@ -48,3 +48,21 @@ factorial(5)
 = 120
 
 ---------------------------------------------------------------------
+
+* How Recursion Works Internally
+-----------------------------------
+
+-> Each recursive call is pushed onto the call stack. When the base case is reached, the calls start returning and "unwind" back down the stack, combining results as they go.
+
+Why Use Recursion?
+---------------------
+
+-> Recursion is useful for problems that are naturally self-similar or hierarchical:
+
+    => Tree and graph traversals (e.g., navigating a file system)
+    => Divide-and-conquer algorithms (merge sort, quicksort, binary search)
+    => Mathematical sequences (factorial, Fibonacci)
+    => Backtracking problems (mazes, permutations, N-Queens)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
