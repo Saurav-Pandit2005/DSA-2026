@@ -189,3 +189,10 @@ Why Use Recursion?
 -> Check Q8.java
 
 -------------------
+
+** Print x^n
+-----------------
+
+-> Check Q9.java
+
+---------------------
