@@ -183,3 +183,9 @@ Why Use Recursion?
 
 -------------------
 
+** Write a Function to find the last Occurances of an element in an array
+----------------------------------------------------------------------------
+
+-> Check Q8.java
+
+-------------------
