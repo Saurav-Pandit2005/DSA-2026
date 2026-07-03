@@ -169,3 +169,9 @@ Why Use Recursion?
 
 --------------------
 
+** Check if array is sorted or not
+------------------------------------
+
+-> Check Q6.java
+
+--------------------
