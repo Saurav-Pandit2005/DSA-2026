@@ -1,4 +1,4 @@
-// Print x^n
+// Print x to the Power n   (Print x^n)
 
 // Tc = O(n)    Sc = O(n)
 
