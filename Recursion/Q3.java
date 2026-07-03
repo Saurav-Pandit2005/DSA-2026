@@ -1,5 +1,7 @@
 // Find Factorial of N
 
+// Tc = O(n)        Sc = O(n)
+
 package Recursion;
 
 public class Q3 {
