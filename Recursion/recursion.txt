@@ -175,3 +175,11 @@ Why Use Recursion?
 -> Check Q6.java
 
 --------------------
+
+** Write a Function to find the first Occurances of an element in an array
+----------------------------------------------------------------------------
+
+-> Check Q7.java
+
+-------------------
+
