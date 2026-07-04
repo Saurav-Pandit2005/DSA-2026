@@ -1,0 +1,24 @@
+** What id Divide & Conquer?
+-----------------------------
+
+-> Divide and Conquer is an algorithm design paradigm that solves a problem by breaking it into smaller subproblems of the same type, 
+    solving each subproblem recursively, and then combining their results to solve the original problem.
+
+-------------------------------------------------------------------------------------------------------------
+
+* The Three Steps
+
+1. Divide – Break the problem into smaller subproblems (usually of the same type).
+2. Conquer – Solve the subproblems recursively. If a subproblem is small enough, solve it directly (base case).
+3. Combine – Merge the solutions of the subproblems to get the solution to the original problem.
+
+---------------------------------------------------------------------------------------------------------------------
+
+* Classic Examples
+
+Merge Sort
+Quick Sort
+Binary Search
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
