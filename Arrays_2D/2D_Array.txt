@@ -26,4 +26,35 @@
 
                 int[][] numbers = new int[3][4]; // 3 rows, 4 columns
 
+
+        -> Check Arrays_2D_Basics.java
+
 ---------------------------------------------------------------------------------
+
+** Search in 2D Matrix
+--------------------------
+
+-> Check Q1.java
+
+-------------------
+
+** Spiral Matrix
+-------------------
+
+-> Check Q2.java
+
+------------------
+
+** Diagonal Sum 
+------------------
+
+-> Check Q3.java
+
+-----------------
+
+** Search in Sorted Matrix
+----------------------------
+
+-> Check Q4.java
+
+------------------
