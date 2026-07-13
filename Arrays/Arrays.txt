@@ -1,0 +1,85 @@
+** Arrays - Introduction, Creation, (Input, Output & Updation) , Arrays as a Functional Arguments ..
+-----------------------------------------------------------------------------------------------------
+
+-> Check Array_Basics.java
+
+-> Check Array_Updation.java
+
+-------------------------------------------------
+
+** Linear Search
+----------------------
+
+-> Check Q1.java
+
+---------------------
+
+** largest and smallest in Array 
+-----------------------------------
+
+-> Check Q2.java
+
+------------------
+
+** Binary Search
+------------------
+
+-> Check Q3.java
+
+------------------
+
+** Reverse an Array 
+----------------------
+
+-> Check Q4.java
+
+-----------------
+
+** Pairs in Array 
+----------------------
+
+-> Check Q5.java
+
+------------------
+
+** Print Subarrays
+----------------------
+
+-> Check Q6.java
+
+------------------
+
+** Max Subarray Sum (Brute Force Approch)
+------------------------------------------
+
+-> Check Q7.java
+
+------------------
+
+**  Max Subarray Sum (Prefix Sum Approch)
+------------------------------------------
+
+-> Check Q8.java
+
+------------------
+
+**  Max Subarray Sum (Kadane's Algorithm Approch)
+---------------------------------------------------
+
+-> Check Q9.java
+
+------------------
+
+**  Trapping Rainwater
+-------------------------
+
+-> Check Q10.java
+
+------------------
+
+**  Best Time to Buy & Sell Stocks
+------------------------------------
+
+-> Check Q11.java
+
+------------------
