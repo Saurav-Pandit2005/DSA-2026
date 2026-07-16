@@ -5,6 +5,7 @@ What is Linked List?
 
 -> It is part of java.util and implements both the List and Deque interfaces.
 
+----------------------------------------------------------------------------------------------------------------------
 
 ** Head & Tail in LinkedList
 ---------------------------------
@@ -34,3 +35,7 @@ What is Linked List?
         -> In a doubly linked list (like Java’s LinkedList), the tail also has a prev pointer to the second-last node.
 
         -> Example: In [10 → 20 → 30], the tail points to 30.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+** 
