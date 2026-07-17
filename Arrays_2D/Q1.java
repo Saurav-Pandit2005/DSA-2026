@@ -1,4 +1,4 @@
-// Search in 2D Matrix
+// Search in 2D Matrix - Linear Search O(n^2)
 
 package Arrays_2D;
 
