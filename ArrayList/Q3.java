@@ -1,4 +1,4 @@
-// Swap 2 Numbers
+// Swap 2 Numbers in ArrayList
 
 /*
     list = 2,5,9,3,6      index : idx1 = 1, idx2 = 3
