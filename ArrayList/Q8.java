@@ -10,7 +10,7 @@ package ArrayList;
 import java.util.ArrayList;
 
 public class Q8 {
-    public static boolean pairSum(ArrayList<Integer> list, int target) {
+    public static boolean PairSum_1(ArrayList<Integer> list, int target) {
         int start = 0, end = list.size()-1;
         while(start < end) {
             if(list.get(start) + list.get(end) == target) return true;
@@ -29,6 +29,6 @@ public class Q8 {
         list.add(5);
 
         int target = 5;
-        System.out.println(pairSum(list, target));
+        System.out.println(PairSum_1(list, target));
     }
 }
