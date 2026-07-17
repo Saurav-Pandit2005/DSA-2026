@@ -1,4 +1,4 @@
-// Pair Sum - 1 (Brute Force O(n2))
+// Pair Sum - 1 (Brute Force O(n^2))
 
 /*
     Find if any pair in a sorted ArrayList has a target sum.
