@@ -46,6 +46,7 @@ public class Q5 {
         String start = getStart(tickets);
         System.out.print(start);
         for(String key : tickets.keySet()) {
+            System.out.println(key);
             System.out.print(" -> " + tickets.get(start));
             start = tickets.get(start);
         }
