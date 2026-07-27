@@ -107,4 +107,36 @@ What is Linked List?
 
 ----------------------------------------------------------------------------------------------------
 
-** 
+** Print a Linked List
+-------------------------
+
+-> Start from head and move through each node using temp = temp.next.
+
+-> Print the data of each node until you reach null.
+
+-> This traversal is O(n) since you visit every node once.
+
+
+    * Example
+    -----------
+
+     public void print() {
+
+        if(head == null) {
+            System.out.println("Linked List is Empty");
+            return;
+        }
+
+        Node temp = head;
+        while(temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
+-----------------------------------------------------------------------------------
+
+** Add in the middle of LinkedList
+------------------------------------
+
