@@ -50,6 +50,20 @@ public class Linked_List_Basic {
 
     }
 
+    public void print() {
+
+        if(head == null) {
+            System.out.println("Linked List is Empty");
+            return;
+        }
+
+        Node temp = head;
+        while(temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
 
     public static void main(String[] args) {
         Linked_List_Basic ll = new Linked_List_Basic();
@@ -65,7 +79,11 @@ public class Linked_List_Basic {
         // addLast function
 
         ll.addLast(3);
-        ll.addFirst(4);
+        ll.addLast(4);
+
+        // print function
+
+        ll.print();
     }
 }
 
