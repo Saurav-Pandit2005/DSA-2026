@@ -140,3 +140,71 @@ What is Linked List?
 ** Add in the middle of LinkedList
 ------------------------------------
 
+    -> Traverse the list until you reach the position where you want to insert.
+
+    -> Create a new node.
+
+    -> Adjust the next pointers so the new node fits between two existing nodes.
+
+    ------------------------------------------------------------------------------
+
+    -> If index == 0, it’s the same as addFirst.
+
+    -> If index == size, it’s the same as addLast.
+
+    -> Time complexity: O(n) (because you may need to traverse up to the middle).
+
+    ----------------------------------------------------------------------------------
+
+    * Example
+    -----------
+
+    public void addInMiddle(int idx, int data) {
+
+        if(idx == 0) {
+            addFirst(data);
+            return;
+        }
+
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i = 0;
+
+        while(i < idx-1) {
+            temp = temp.next;
+            i++;
+        }
+
+        // i = idx - 1
+
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
+-------------------------------------------------------------------------------------------------------
+
+** Size of a LinkedList
+-------------------------
+
+    -> To find the size of a Linked List in Java, you can either:
+
+    1) Maintain a counter that updates whenever you add or remove nodes (efficient).
+
+    2) Traverse the list and count nodes each time you need the size (simpler, but less efficient).
+
+    ---------------------------------------------------------------------------------------------------
+
+    1) Maintaining a counter → O(1) time to get size.
+
+    2) Traversing each time → O(n) time to get size.
+
+    -> In practice, most implementations (like Java’s built-in LinkedList) maintain a counter internally for efficiency.
+
+    -----------------------------------------------------------------------------------------------------------------------
+
+    * Example
+    ----------
+
+    -> Check Linked_List_Basic.java (size of a ll function)
+
+------------------------------------------------------------------------------------------------------------------------------------
