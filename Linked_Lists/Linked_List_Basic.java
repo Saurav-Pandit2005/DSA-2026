@@ -12,11 +12,13 @@ public class Linked_List_Basic {
     }
     public static Node head;
     public static Node tail;
+    public static int size;
 
     public void addFirst(int data) {
 
         // step1 - create newNode
         Node newNode = new Node(data);
+        size++;
 
         if(head == null) {
             head = tail = newNode;
@@ -36,6 +38,7 @@ public class Linked_List_Basic {
 
         // step1 - create newNode
         Node newNode = new Node(data);
+        size++;
 
         if(head == null) {
             head = tail = newNode;
@@ -65,6 +68,29 @@ public class Linked_List_Basic {
         System.out.println("null");
     }
 
+    public void addInMiddle(int idx, int data) {
+
+        if(idx == 0) {
+            addFirst(data);
+            return;
+        }
+
+        Node newNode = new Node(data);
+        size++;
+        Node temp = head;
+        int i = 0;
+
+        while(i < idx-1) {
+            temp = temp.next;
+            i++;
+        }
+
+        // i = idx - 1
+
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
     public static void main(String[] args) {
         Linked_List_Basic ll = new Linked_List_Basic();
 
@@ -78,13 +104,20 @@ public class Linked_List_Basic {
 
         // addLast function
 
-        ll.addLast(3);
         ll.addLast(4);
+        ll.addLast(5);
 
         // print function
 
         ll.print();
+
+        // add in middle function
+
+        ll.addInMiddle(2, 3);
+        ll.print();
+
+        // for print size of ll
+
+        System.out.println(ll.size);
     }
 }
-
-
