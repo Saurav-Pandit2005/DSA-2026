@@ -14,6 +14,7 @@ public class Linked_List_Basic {
     public static Node tail;
     public static int size;
 
+    // Add first in ll function
     public void addFirst(int data) {
 
         // step1 - create newNode
@@ -34,6 +35,7 @@ public class Linked_List_Basic {
 
     }
 
+    // Add last in ll function
     public void addLast(int data) {
 
         // step1 - create newNode
@@ -53,6 +55,7 @@ public class Linked_List_Basic {
 
     }
 
+    // print ll function
     public void print() {
 
         if(head == null) {
@@ -68,6 +71,7 @@ public class Linked_List_Basic {
         System.out.println("null");
     }
 
+    // Add middle at a ll function
     public void addInMiddle(int idx, int data) {
 
         if(idx == 0) {
@@ -91,6 +95,53 @@ public class Linked_List_Basic {
         temp.next = newNode;
     }
 
+    // Remove first in ll function
+    public int RemoveFirst() {
+        if(size == 0) {
+            System.out.println("ll is Empty");
+            return Integer.MIN_VALUE;
+        }
+
+        else if(size == 1) {
+            int value = head.data;
+            head = tail = null;
+            size = 0;
+            return value;
+        }
+
+        int value = head.data;
+        head = head.next;
+        size--;
+        return value;
+    }
+
+    // Remove last in ll function
+    public int RemoveLast() {
+        if(size == 0) {
+            System.out.println("ll is Empty");
+            return Integer.MIN_VALUE;
+        }
+        
+        else if(size == 1) {
+            int value = head.data;
+            head = tail = null;
+            size = 0;
+            return value;
+        }
+
+        // prev node = i = size - 2
+        Node prev = head;
+        for(int i=0; i<size-2; i++) {
+            prev = prev.next;
+        }
+
+        int value = prev.next.data;     // tail.data
+        prev.next = null;
+        tail = prev;
+        size--;
+        return value;
+    }
+
     public static void main(String[] args) {
         Linked_List_Basic ll = new Linked_List_Basic();
 
@@ -98,20 +149,20 @@ public class Linked_List_Basic {
         // ll.head = new Node(1);
         // ll.head.next = new Node(2);
 
-        // addFirst function
+        // addFirst function of ll
         ll.addFirst(2);
         ll.addFirst(1);
 
-        // addLast function
+        // addLast function of ll
 
         ll.addLast(4);
         ll.addLast(5);
 
-        // print function
+        // print function of ll
 
         ll.print();
 
-        // add in middle function
+        // add in middle of ll
 
         ll.addInMiddle(2, 3);
         ll.print();
@@ -119,5 +170,18 @@ public class Linked_List_Basic {
         // for print size of ll
 
         System.out.println(ll.size);
+
+        // Remove first in ll
+
+        ll.RemoveFirst();
+        ll.print();
+        System.out.println(ll.size);
+
+        // Remove last in ll
+
+        ll.RemoveLast();
+        ll.print();
+        System.out.println(ll.size);
+
     }
 }
