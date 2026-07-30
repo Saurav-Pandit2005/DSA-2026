@@ -208,3 +208,102 @@ What is Linked List?
     -> Check Linked_List_Basic.java (size of a ll function)
 
 ------------------------------------------------------------------------------------------------------------------------------------
+
+** Remove in a LinkedList
+---------------------------
+
+    1) Remove first
+    -----------------
+
+        -> To remove the first node in a Linked List (LL), you simply update the head pointer to point to the second node (head.next).
+
+        -> head = head.next
+
+        -----------------------------------------------------------------------------------------
+
+        * Example
+        ----------
+
+        if(size == 0) {
+            System.out.println("ll is Empty");
+            return Integer.MIN_VALUE;
+        }
+        
+        else if(size == 1) {
+            int value = head.data;
+            head = tail = null;
+            size = 0;
+            return value;
+        }
+
+        int value = head.data;
+        head = head.next;
+        size--;
+        return value;
+
+        --------------------------------------------------------
+
+        ->If the list is empty (head == null), handle gracefully.
+
+        -> Otherwise, just move head to head.next.
+
+        -> Time complexity: O(1) (constant time).
+
+    ------------------------------------------------------------------------------------
+
+    2) Remove last
+    ---------------
+
+        -> To remove the last node in a Linked List (LL), you need to traverse until you reach the second‑last node, then set its next to null.
+
+        -> prev.next = null
+        -> tail = prev
+
+        ------------------------------------------------------------------------------------
+
+        * Example
+        -----------
+
+        if(size == 0) {
+            System.out.println("ll is Empty");
+            return Integer.MIN_VALUE;
+        }
+        
+        else if(size == 1) {
+            int value = head.data;
+            head = tail = null;
+            size = 0;
+            return value;
+        }
+
+        // prev node = i = size - 2
+        Node prev = head;
+        for(int i=0; i<size-2; i++) {
+            prev = prev.next;
+        }
+
+        int value = prev.next.data;     // tail.data
+        prev.next = null;
+        tail = prev;
+        size--;
+        return value;
+
+        ------------------------------------------------------------------------
+
+        -> If the list is empty → handle gracefully.
+
+        -> If only one node → set head = null.
+
+        -> Otherwise, traverse until temp.next.next == null (second‑last node).
+
+        -> Time complexity: O(n) (linear traversal).
+
+-------------------------------------------------------------------------------------------------------------------
+
+** Search (Iterative) 
+----------------------
+
+-> Check Q1.java
+
+----------------
+
