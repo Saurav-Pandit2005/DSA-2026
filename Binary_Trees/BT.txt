@@ -1,0 +1,83 @@
+** Introduction to Binary Trees
+-----------------------------------
+
+-> Binary Tree : Hierarchical Data Structure
+
+-> A binary tree is a hierarchical data structure where each node has at most two children, commonly referred to as the left child and right child.
+
+-------------------------------------------------------------------------------------------------------------
+
+    * Key Terminologies:
+    ----------------------
+
+        -> Root: The topmost node.
+
+        -> Leaf: A node with no children.
+
+        -> Parent/Child: Relationship between connected nodes.
+
+        -> Height: Longest path from root to a leaf.
+
+        -> Depth/Level: Distance from root to a node.
+
+--------------------------------------------------------------------------------------------------
+
+** Levels & Subtree in a Tree
+---------------------------------
+
+* Levels in a Tree
+-----------
+
+-> Level refers to the distance of a node from the root.
+
+-> Root node is always at level 0 OR 1.
+
+-> Its children are at level 1, their children at level 2, and so on.
+
+-> The maximum level in a tree is equal to its height.
+
+-------------------------------------------------
+
+    * Example 
+    -------------
+
+                    A (level 0)
+                    / \
+                B(level 1)   C(level 1)
+                / \            \
+        (level 2)D E(level 2) F(level 2)
+
+        ------------------------------------
+
+        -> Here:
+
+            -> A is at level 0
+
+            -> B and C are at level 1
+
+            -> D, E, F are at level 2
+
+
+-> Subtrees in a Tree
+-----------------------
+
+-> Left & Right Subtree .....
+
+->A subtree is simply a tree formed from any node and all its descendants.
+
+-> Every node in a binary tree can be considered the root of its own subtree.
+
+-> Subtrees are important because many algorithms (like recursion in traversals, insertion, deletion) work by breaking the tree into smaller subtrees.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+    * Example:
+    ------------
+
+    -> In the above tree:
+
+    -> The subtree rooted at B includes nodes B, D, and E.
+
+    -> The subtree rooted at C includes nodes C and F.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
