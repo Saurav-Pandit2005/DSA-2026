@@ -80,7 +80,7 @@ What is Linked List?
 ** Add Last in LinkedList
 ----------------------------
 
--> There are three steps for Add First in LL.
+-> There are three steps for Add Last in LL.
 
     1) Create New node
     2) tail next -> newNode
@@ -103,7 +103,7 @@ What is Linked List?
         // step3 - tail = newNode
         tail = newNode;
 
-    -> Time complexity: O(1) (constant time insertion at the beginning).
+    -> Time complexity: O(1) (constant time insertion at the end).
 
 ----------------------------------------------------------------------------------------------------
 
@@ -180,6 +180,13 @@ What is Linked List?
         newNode.next = temp.next;
         temp.next = newNode;
     }
+
+    ---------------------------------------------------------------------
+    
+    -> Always validate the index.
+
+        if(idx < 0 || idx > size)
+            throw new IndexOutOfBoundsException();
 
 -------------------------------------------------------------------------------------------------------
 
