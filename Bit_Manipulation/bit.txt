@@ -297,6 +297,13 @@
     
 ---------------------------------------------------------------------------------------------
 
+** Check if number is Odd or Even
+-----------------------------------
+
+-> Check Q1.java
+
+------------------
+
 ** operations
 ---------------
 
@@ -329,6 +336,11 @@
 
         -> & 1 → extracts the last bit (LSB).
 
+    -------------------------------------------------------------
+
+    -> Check Q2.java
+
+    --------------------
 
     * Programming Example
     ----------------------
@@ -372,6 +384,11 @@
 
         -> | → sets that bit to 1 (others remain unchanged).
 
+    -------------------------------------------------------------
+
+    -> Check Q3.java
+
+    --------------------
 
     * Programming Example
     ----------------------
@@ -415,6 +432,12 @@
 
         -> & → clears that bit to 0.
 
+    -------------------------------------------------------------
+
+    -> Check Q4.java
+
+    --------------------
+
     * Programming Example
     ----------------------
 
@@ -448,7 +471,11 @@
 
             newNumber = cleared  ∣  (𝑣<<𝑖)
 
-    ----------------------------------------------------------------------------------------        
+    ---------------------------------------------------------------------------------------- 
+
+    -> Check Q5.java
+
+    --------------------       
 
      * Programming Example
     ----------------------
@@ -494,3 +521,134 @@
 
     -------------------------------------------------------------------------------------------
 
+    5) Clear last i Bit
+    ---------------------
+
+    -> To clear the last i bits of a number, we essentially want to set the rightmost 𝑖 bits to 0, while keeping the rest unchanged.
+
+
+    * Formula
+    -----------
+
+                                𝑛 & (∼((1<<𝑖)−1))
+
+        -> (1 << i) → gives 2^𝑖.
+
+        -> (1 << i) - 1 → creates a mask with last 𝑖 bits = 1.
+
+        -> ~((1 << i) - 1) → flips it, so last 𝑖 bits = 0, others = 1.
+
+        -> n & mask → clears last 𝑖 bits of 𝑛.
+
+    ---------------------------------------------------------------------------------------- 
+
+    -> Check Q6.java
+
+    --------------------       
+
+     * Programming Example
+    ----------------------
+
+    // Clear last i Bit
+
+    package Bit_Manipulation;
+
+    public class Q6 {
+
+        public static int clearIBits(int n, int i) {
+            int bitMask = (~0)<<i;
+            return n & bitMask;
+        }
+        public static void main(String[] args) {
+            int n = 15, i = 2;
+            System.out.println(clearIBits(n, i));
+        }
+    }
+
+    -----------------------------------------------------------------------------
+
+    6) Clear Range of Bits
+    -----------------------
+
+    -> To clear a range of bits in a number, we want to set all bits between positions i and j (inclusive) to 0, while keeping the rest unchanged.
+
+
+    * Formula
+    ----------
+                        
+                        𝑛  &  (∼(((1<<(𝑗−𝑖+1))−1)<<𝑖))
+
+        -> (1 << (j - i + 1)) - 1 → creates a mask with (j - i + 1) ones.
+
+        -> << i → shifts this mask to align with the bit range.
+
+        -> ~mask → flips it, so the target range becomes 0s, others 1s.
+
+        -> n & mask → clears bits in that range.
+
+    ---------------------------------------------------------------------------------------- 
+
+    -> Check Q7.java
+
+    --------------------       
+
+     * Programming Example
+    -----------------------
+
+    // Clear Range of Bits
+
+    package Bit_Manipulation;
+
+    public class Q7 {
+        public static int clearBitsinRange(int n, int i, int j) {
+            int a = ((~0)<<(j+1));
+            int b = (1<<i)-1;
+            int bitMask = a | b;
+            return n & bitMask;
+        }
+        public static void main(String[] args) {
+            int n = 10, i = 2, j = 4;
+            System.out.println(clearBitsinRange(n, i, j));
+        }
+    }
+
+--------------------------------------------------------------------------------------------------
+
+** Check if a number is a Power of 2 or not.
+-----------------------------------------------
+
+-> Check Q8.java
+
+------------------
+
+** Count Set bits in a Number
+------------------------------
+
+-> Counting the set bits (the number of 1s in a binary representation) is a classic bit manipulation problem.
+
+
+    * Concept
+    ------------
+
+    -> A set bit = a bit with value 1.
+
+
+    * Example:
+    -----------
+
+    11(base)10=1011(base)2 → has 3 set bits.
+
+    -----------------------------------------------
+
+    -> Check Q9.java
+
+    ---------------------
+
+-------------------------------------
+
+** Fast Exponentiation
+-------------------------
+
+-> Check Q10.java
+
+-------------------
