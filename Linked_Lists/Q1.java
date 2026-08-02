@@ -44,6 +44,6 @@ public class Q1 {
         head.next = new Node(20);
         head.next.next = new Node(30);
 
-        System.out.println(ll.IterativeSearch(20)); // 1
+        System.out.println(ll.IterativeSearch(20));         // 1
     }
 }
