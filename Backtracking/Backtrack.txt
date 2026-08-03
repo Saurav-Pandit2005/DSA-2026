@@ -1,0 +1,42 @@
+** Introduction to Backtracking
+---------------------------------
+
+-> Backtracking in Java is a recursive problem-solving technique where you build solutions step by step, undoing choices when they lead to dead ends.
+
+-> It’s widely used in puzzles (Sudoku, N-Queens), pathfinding (mazes), and generating combinations or permutations.
+
+* What is Backtracking?
+--------------------------
+
+    -> Definition: Backtracking is a trial-and-error algorithm that explores possible solutions incrementally and abandons invalid paths early.
+
+    ------------------------------------------------------------------------------------------------------------------------------------
+
+    * Core Idea:
+    --------------
+
+    -> Choose – Make a decision (e.g., place a queen, pick a number).
+
+    -> Explore – Recursively continue with that choice.
+
+    -> Check validity – If invalid, undo the choice.
+
+    -> Repeat – Try other options until a valid solution is found or all possibilities are exhausted.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Types of Backtracking
+---------------------------
+
+1) Decision
+2) Optimization
+3) Enumeration
+
+-------------------------------------
+
+** Backtracking on Arrays
+-----------------------------
+
+-> Check Backtracking_Basic.Java
+
+-----------------------------------
