@@ -18,8 +18,8 @@
     * Implementation
     ------------------
 
-        1) Queue Implementation Using Array
-        ------------------------------------
+        1) Queue Implementation Using Arrays
+        --------------------------------------
 
         -> Queue follows FIFO (First-In-First-Out) → first element inserted is the first to be removed.
 
@@ -54,18 +54,35 @@
         ---------------------------------------------------------------------------------
 
         -> Check Queue_Implementation_1.Java
-        
+
         ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        2) Queue Implementation Using LinkedList 
-        ------------------------------------------
+        2) Circular Queue Implementation Using Arrays
+        -----------------------------------------------
 
-        -> 
+        -> In a linear array queue, once rear reaches the end, you can’t insert more elements even if there’s free space at the front.
+
+        -> A circular queue reuses that space by wrapping around using modulo arithmetic.
+
+        -> This makes it more memory-efficient.
+
+        * Summary
+        -----------
+
+        -> Circular Queue is array-based but space-efficient.
+
+        -> Uses modulo arithmetic to wrap around indices.
+
+        -> Commonly used in buffering, scheduling, and resource management. 
+
+        ---------------------------------------------------------------------------------
+
+        -> Check Queue_Implementation_2.Java
 
         --------------------------------------
 
-        3) Queue Implementation Stack LinkedList
-        -----------------------------------------
+        3) Queue Implementation Using LinkedList
+        ------------------------------------------
 
         
 
