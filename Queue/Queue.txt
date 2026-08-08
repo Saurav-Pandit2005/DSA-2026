@@ -1,0 +1,81 @@
+** Introduction to Queue
+---------------------------
+
+-> A Queue is a collection designed to hold elements before processing, typically following the FIFO (First-In-First-Out) principle, 
+   though variations like PriorityQueue or Deque allow different ordering.
+
+
+    * Operations
+    --------------
+
+    -> Add  O(1)        => Enque
+
+    -> Remove  O(1)     => Dequeue
+
+    ->Peek()   O(1)     => Front
+
+
+    * Implementation
+    ------------------
+
+        1) Queue Implementation Using Array
+        ------------------------------------
+
+        -> Queue follows FIFO (First-In-First-Out) → first element inserted is the first to be removed.
+
+        -> Using an array, we need to manage:
+
+        -> front → index of the first element.
+
+        -> rear → index of the last element.
+
+        -> size → number of elements.
+
+        -> We must handle overflow (when queue is full) and underflow (when queue is empty).
+
+
+        * Why Circular Array?
+        -----------------------
+
+        -> Without circular logic, once rear reaches the end, you can’t reuse freed space at the front.
+
+        -> Using (index + 1) % capacity makes the array circular, so space is reused efficiently. 
+
+
+        * Summary
+        ------------
+
+        -> Array Queue is simple but has fixed capacity.
+
+        -> Circular Array Queue solves wasted space problem.
+
+        -> For dynamic resizing, prefer ArrayList or LinkedList implementations.
+
+        ---------------------------------------------------------------------------------
+
+        -> Check Queue_Implementation_1.Java
+        
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        2) Queue Implementation Using LinkedList 
+        ------------------------------------------
+
+        -> 
+
+        --------------------------------------
+
+        3) Queue Implementation Stack LinkedList
+        -----------------------------------------
+
+        
+
+        --------------------------------------
+
+        4) Queue Implementation Using Java Collection Framework (JCF)
+        --------------------------------------------------------------
+
+        -> 
+
+        --------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
