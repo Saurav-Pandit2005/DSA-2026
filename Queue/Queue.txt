@@ -84,15 +84,71 @@
         3) Queue Implementation Using LinkedList
         ------------------------------------------
 
-        
+        * Why LinkedList for Queue?
+        -----------------------------
 
-        --------------------------------------
+        -> Dynamic size → grows/shrinks as needed.
+
+        -> Efficient insertions/deletions at both ends.
+
+        -> No need for circular logic like arrays.
+
+        -> Java’s LinkedList already implements the Queue interface, so it’s straightforward.
+
+        ----------------------------------------------------------------------------------------
+
+        * Summary:
+        -------------
+
+        -> Use Array Queue when size is known and memory overhead matters.
+
+        -> Use LinkedList Queue when dynamic resizing and frequent insertions/deletions are needed.
+
+        ---------------------------------------------------------------------------------------------
+
+        -> -> Check Queue_Implementation_3.Java
+
+        -----------------------------------------------
 
         4) Queue Implementation Using Java Collection Framework (JCF)
         --------------------------------------------------------------
 
-        -> 
+        ->  Implement a Queue using the Java Collection Framework (JCF). This is the most practical way to use queues in real-world applications because JCF
+            provides ready-made, efficient implementations.
 
-        --------------------------------------
+        -------------------------------------------------------------------------------------------------------------------------------------------------
+
+        * Key Points
+        --------------
+                
+        -> In JCF, Queue is an interface in java.util.
+
+        * Common implementations:
+
+        -> LinkedList → simple FIFO queue.
+
+        -> PriorityQueue → orders elements by priority.
+
+        ->ArrayDeque → efficient double-ended queue.
+
+        -> Methods available: add(), offer(), remove(), poll(), peek(), element().
+
+        -----------------------------------------------------------------------------------
+
+        *  Summary:
+        --------------
+
+        -> JCF makes queue implementation easy and efficient.
+
+        -> Choose LinkedList for basic FIFO, ArrayDeque for performance, and PriorityQueue for priority-based tasks.
+
+        ---------------------------------------------------------------------------------------------------------------
+
+        -> Check Queue_Implementation_4.Java
+
+        -------------------------------------------------------------------------------------------------
+
+        ** implementation Stack Using 2 Queue
+        ---------------------------------------
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
